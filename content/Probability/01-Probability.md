@@ -2,7 +2,6 @@
 title: Introduction to Probability
 description: description
 date: "2019-06-25"
-image: ""
 tags: ["probability"]
 ---
 
