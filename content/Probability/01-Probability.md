@@ -45,13 +45,13 @@ $$P( \bigcup^\infin_{i=1}A_i) = \sum^\infin_{i=1}P(A_i) $$
 
 Many properties can be derived from these axioms:
 
-$$P(\varnothing) = 0$$
-$$A \subset B \Rightarrow P(A) \leq P(B)$$ 
-$$0 \leq P(A) \leq 1$$
-$$P(\bar{A}) = 1-P(A)$$
-$$A \bigcap B = \varnothing \Rightarrow P(A \bigcup B = P(A) + P(B))$$
+$$P(\varnothing) = 0 \\$$
+$$A \subset B \Rightarrow P(A) \leq P(B) \\$$
+$$0 \leq P(A) \leq 1 \\$$
+$$P(\bar{A}) = 1-P(A) \\$$
+$$A \bigcap B = \varnothing \Rightarrow P(A \bigcup B = P(A) + P(B)) \\$$
 
-For Events that that are disjoint (mutually exclusive) the following also applies:
+The following can also be derived (this equation handles double counting so that the intersection is not counted twice):
 
 $$P(A \bigcup B) = P(A) + P(B) - P(AB)$$
 
