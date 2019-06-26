@@ -1,1 +1,2 @@
-# blog
+# Blog created with Gatsbyjs
+

@@ -1,0 +1,18 @@
+.social{
+    display: flex;
+      justify-content: center;
+    list-style: none;
+
+}
+
+.social li{
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.center{
+    text-align: center;
+    font-weight: 400;
+}
