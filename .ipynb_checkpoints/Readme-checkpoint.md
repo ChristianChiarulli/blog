@@ -1,2 +1,0 @@
-# Blog created with Gatsbyjs
-
