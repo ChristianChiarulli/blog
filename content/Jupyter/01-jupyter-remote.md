@@ -2,10 +2,10 @@
 title: Setting up a Remote Jupyter Lab Server
 description: description
 date: "2019-06-25"
-tags: ["probability"]
+tags: ["jupyter"]
 ---
 
-In order to setup a remote Jupyter Lab server yo must complete the following steps:
+In order to setup a remote Jupyter Lab server you must complete the following steps:
 
 1. Open ports 22 (ssh) and 8888 (jupyter)
 2. Configure Jupyter Lab to request a password instead of a token 
