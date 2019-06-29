@@ -7,6 +7,7 @@ import MetaTags from '../components/Metatags'
 import Share from '../components/share'
 import '../css/markdown.css'
 import 'katex/dist/katex.min.css'
+import '../css/themes/prism-darcula.css'
 
 function BlogPost(props) {
   const url = props.data.site.siteMetadata.siteUrl
