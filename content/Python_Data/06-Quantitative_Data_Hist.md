@@ -2,7 +2,6 @@
 title: Quantitative Data & Histograms
 description: description
 date: "2019-04-05"
-image: ""
 tags: ["statistics"]
 ---
 

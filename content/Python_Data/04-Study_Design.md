@@ -2,7 +2,6 @@
 title: Study Design
 description: description
 date: "2019-04-04"
-image: ""
 tags: ["statistics"]
 ---
 

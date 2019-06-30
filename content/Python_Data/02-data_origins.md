@@ -2,7 +2,6 @@
 title: Where does Data come from?
 description: description
 date: "2019-04-02"
-image: ""
 tags: ["statistics"]
 ---
 

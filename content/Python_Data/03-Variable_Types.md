@@ -2,7 +2,6 @@
 title: Variable Types
 description: description
 date: "2019-04-03"
-image: ""
 tags: ["statistics"]
 ---
 

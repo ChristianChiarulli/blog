@@ -2,7 +2,6 @@
 title: What is Statistics?
 description: description
 date: "2019-04-01"
-image: ""
 tags: ["statistics"]
 ---
 

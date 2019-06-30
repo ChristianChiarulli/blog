@@ -33,6 +33,7 @@ function BlogPost(props) {
           className='markdown-body'
         />
         <div>
+          <br />
           <span>Tagged in </span>
           {tags.map((tag, i) => (
             <a href={`/${tag}`} key={i} style={{ marginLeft: '10px' }}>
