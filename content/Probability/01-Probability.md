@@ -48,7 +48,7 @@ $$\\ P( \bigcup^\infin_{i=1}A_i) = \sum^\infin_{i=1}P(A_i) \\$$
 Many properties can be derived from these axioms:
 
 $$P(\varnothing) = 0 \\$$
-$$\\$$
+<br />
 $$A \subset B \Rightarrow P(A) \leq P(B)\\$$
 $$0 \leq P(A) \leq 1 \\$$
 $$P(\bar{A}) = 1-P(A) \\$$
