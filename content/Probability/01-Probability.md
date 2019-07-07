@@ -49,10 +49,19 @@ Many properties can be derived from these axioms:
 
 $$P(\varnothing) = 0 \\$$
 <br />
+
 $$A \subset B \Rightarrow P(A) \leq P(B)\\$$
+<br />
+
 $$0 \leq P(A) \leq 1 \\$$
+<br />
+
 $$P(\bar{A}) = 1-P(A) \\$$
+<br />
+
 $$A \bigcap B = \varnothing \Rightarrow P(A \bigcup B) = P(A) + P(B) \\$$
+<br />
+
 
 For any events A and B (this equation handles double counting so that the intersection is not counted twice when events are not mutually exclusive):
 
