@@ -9,9 +9,18 @@ This guide will show you how to install the latest version of Miniconda. Minicon
 
 ## Download Install Script
 
+### Linux
+
 ```bash
-$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 ```
+
+### Mac
+
+```bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
+```
+
 
 ## Install Minconda
 
