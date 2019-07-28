@@ -38,6 +38,8 @@ echo 'export PATH="$HOME/.miniconda/bin:$PATH"' >> ~/.bashrc
 . ~/.bashrc
 ```
 
+(note don't run the above command of you don't want to override your systems version of python)
+
 ## Setting up your shell
 
 If you don't want the conda base environment (you may not want this because as of now there are conflicts with later versions of Python and npm)
