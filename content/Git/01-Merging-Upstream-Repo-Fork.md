@@ -1,7 +1,7 @@
 ---
 title: Merging an upstream repo into your fork
 description: description
-date: "2019-08-1"
+date: "2019-08-01"
 tags: ["git"]
 ---
 
