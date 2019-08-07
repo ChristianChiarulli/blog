@@ -5,6 +5,8 @@ date: "2019-06-25"
 tags: ["yolo"]
 ---
 
+< br />
+
 This guide will show you how to get yoloV3 up and running fast on Tensorflow 2.0
 
 ## Clone the repository
