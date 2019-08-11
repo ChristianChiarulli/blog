@@ -2,8 +2,11 @@
 title: Machine Learning Terminology
 description: description
 date: '2019-08-10'
-tags: ['ML']
+tags: ['ml']
 ---
+
+<br />
+<br />
 
 ## Notation
 

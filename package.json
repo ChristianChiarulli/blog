@@ -12,8 +12,9 @@
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-plugin-offline": "^2.2.0",
     "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-remark-embed-youtube": "0.0.7",
+    "gatsby-remark-images": "^3.1.8",
     "gatsby-remark-katex": "^3.1.0",
     "gatsby-remark-prismjs": "^3.3.0",
     "gatsby-source-filesystem": "^2.1.0",
@@ -24,7 +25,6 @@
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.1"
   },
   "keywords": [
