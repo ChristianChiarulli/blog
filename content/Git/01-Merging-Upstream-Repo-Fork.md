@@ -5,7 +5,7 @@ date: "2019-08-01"
 tags: ["git"]
 ---
 
-< br />
+<br />
 
 This article is from Github's help page [here](https://help.github.com/en/articles/merging-an-upstream-repository-into-your-fork) I am adding it here to quickly reference it when I inevitably forget how to do it.
 
