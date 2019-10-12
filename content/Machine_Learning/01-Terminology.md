@@ -16,8 +16,8 @@ tags: ['ml']
 - $x^{(i)}_j$ - value of feature $j$ in $i^{th}$ training example
 - $x^{(i)}$ - input features of $i^{th}$ training example
 - $X$ - feature matrix $(m \times n)$
-- w, $\theta$ - weight vector $(n \times 1)$
-- y - label vector $(n \times 1)$
+- $w$, $\theta$ - weight vector $(n \times 1)$
+- $y$ - label vector $(n \times 1)$
 - $h$ - hypothesis
 - $C, J$ - cost function
 - $a^{(i)}_j$ - activation of the unit $i$ in layer $j$, $a^{(j)}_i=g(z^{(j)}_i)$
