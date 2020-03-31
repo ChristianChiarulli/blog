@@ -1,5 +1,5 @@
 ---
-title: title
+title: Create Project with expo
 description: description
 date: '2019-10-12'
 tags: ['react-native']

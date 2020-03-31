@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Chris's blog",
+  "description": "Chris's blog",
   "version": "1.0.0",
-  "author": "saigowtham",
-  "homepage": "https://saigowthamr.github.io/gatsby-advanced-starter",
+  "author": "Chris",
+  "homepage": "https://chiarulli.me",
   "dependencies": {
     "gatsby": "^2.10.0",
     "gatsby-image": "^2.2.1",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ChristianChiarulli/blog"
   }
 }
