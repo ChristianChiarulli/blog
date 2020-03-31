@@ -7,6 +7,7 @@ const About = () => {
     <Layout>
       <h1>About This Blog</h1>
       <p>This is where I keep all of my notes</p>
+      <p>"https://www.linkedin.com/in/christianchiarulli/"</p>
     </Layout>
   )
 }

@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[{ name: 'description', content: 'My fav blog' }]}>
+          meta={[{ name: 'description', content: 'Chris Chiarull\'s Blog' }]}>
           <script src="https://kit.fontawesome.com/68097771c6.js" />
           <html lang="en" />
         </Helmet>
