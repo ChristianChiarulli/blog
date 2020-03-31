@@ -1,7 +1,7 @@
 ---
 title: Mathematics for Machine Learning
 description: description
-date: '2019-6-10'
+date: '2019-06-10'
 tags: ['ml']
 ---
 
