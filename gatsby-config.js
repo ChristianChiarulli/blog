@@ -17,8 +17,8 @@ module.exports = {
         name: 'Chris\'s blog',
         short_name: 'blog',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#1e2127',
+        theme_color: '#1e2127',
         display: 'minimal-ui',
         icon: 'src/images/CAM.png' // This path is relative to the root of the site.
       }
@@ -37,15 +37,15 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-             {
-          resolve: `gatsby-remark-images`,
-          options: {
-            // It's important to specify the maxWidth (in pixels) of
-            // the content container as this plugin uses this as the
-            // base for generating different widths of each image.
-            maxWidth: 590,
-          }
-        },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            }
+          },
           `gatsby-remark-katex`,
           {
             // for youtube

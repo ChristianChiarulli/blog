@@ -1,11 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import {StaticQuery, graphql} from 'gatsby'
+
 
 import Navbar from './Navbar'
 import '../css/app.css'
 
-const Layout = ({ children }) => (
+const Layout = ({children}) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -20,7 +21,7 @@ const Layout = ({ children }) => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[{ name: 'description', content: 'Chris Chiarull\'s Blog' }]}>
+          meta={[{name: 'description', content: 'Chris Chiarull\'s Blog'}]}>
           <script src="https://kit.fontawesome.com/68097771c6.js" />
           <html lang="en" />
         </Helmet>

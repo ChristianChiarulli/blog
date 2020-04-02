@@ -1,9 +1,9 @@
 const path = require('path')
-const { createFilePath, createFileNode } = require(`gatsby-source-filesystem`)
+const {createFilePath, createFileNode} = require(`gatsby-source-filesystem`)
 const _ = require('lodash')
 
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+exports.createPages = ({actions, graphql}) => {
+  const {createPage} = actions
 
   return new Promise((resolve, reject) => {
     resolve(
@@ -56,7 +56,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
           })
         })
-        posts.forEach(({ node }, index) => {
+        posts.forEach(({node}, index) => {
           createPage({
             path: node.fields.slug,
             component: blogTemplate,
@@ -73,10 +73,10 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
+exports.onCreateNode = ({node, getNode, actions}) => {
+  const {createNodeField} = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = createFilePath({node, getNode, basePath: `pages`})
     createNodeField({
       node,
       name: `slug`,
