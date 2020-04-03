@@ -24,7 +24,7 @@ If you are using a US layout then you're good no need to worry out this section 
 ls /usr/share/kbd/keymaps/**/*.map.gz
 ```
 
-- Now set the one you want:
+- Now set the one you want, here's an example:
 
 ```
 loadkeys de-latin1
@@ -42,13 +42,35 @@ IF the above directory doesn't exist you are either on old hardware or you have 
 
 ## Internet connection
 
+TODO add that junk for ethernet being doa
+
 I recommend installing over ethernet if your not then you can connect using `wifi-menu`
 
 To confirm you're internet works:
 
 ```
-ping archlinux.org
+ping -5 archlinux.org
 ```
+
+If your ethernet is not working then try the following:
+
+```
+ip link # this will show you a number that looks something like  enp39s0
+```
+
+Use the number you found earlier to bring up your interface:
+
+```
+ ip link set dev enp39s0 up 
+```
+
+Then when it is up run Dhcp to pull an IP from the server:
+
+```
+ dhcpcd enp7s0 
+```
+
+Now try to ping again
 
 ## Update System clock
 
@@ -58,7 +80,7 @@ timedatectl set-ntp true
 
 ## Partition disks
 
-Here is where you will most likely find the most trouble if you are not familiar with partitioning tools such as fdiskI would recommend you watch a video for this part since this really won't change much. 
+Here is where you will most likely find the most trouble if you are not familiar with partitioning tools such as fdisk I would recommend you watch a video for this part since this really won't change much. 
 
 **First list your disks**
 
@@ -78,10 +100,9 @@ You should now be in the fdisk utility you can press `m` for help
 
 All of our partitions will be **GPT** partitions so you can press `g` when ready
 
-We will be create 4 partitions for the following:
+We will be create 3 partitions for the following:
 
 - boot
-- swap
 - root
 - home
 
@@ -103,27 +124,6 @@ We will be create 4 partitions for the following:
 
 - Enter `1` (To set the type of the partition we just made to EFI)
 
-### Swap partition
-
-*Note* I will be using the variable `X` for the size of the swap partition, where `X` is 2 x RAM + sqrt(RAM)
-
-- Enter `n` (To create new partition)
-
-- Enter `ENTER` (For the next available partition)
-
-- Enter `ENTER` (To start the first available section)
-
-- Enter `+XG` (This is the variable from earlier)
-
-- Enter `t` (To change the type of the partition to Linux Swap)
-
-- Enter `2` (You will now need to specify which partition you are referring to since now there are two or more)
-
-- Enter `L` (To get a list of all partition types Linux Swap should be 19)
-
-- Press `q` (to escape the list)
-
-- Enter `19` (To set the type of the partition we just made to EFI)
 
 ### Root partition
 
@@ -137,7 +137,7 @@ We will be create 4 partitions for the following:
 
 - Enter `t` (To change the type of the partition to Linux Root (x86-64))
 
-- Enter `3` (You will now need to specify which partition you are referring to since now there are two or more)
+- Enter `2` (You will now need to specify which partition you are referring to since now there are two or more)
 
 - Enter `L` (To get a list of all partition types Linux Root (x86-64) should be 24)
 
@@ -157,7 +157,7 @@ We will be create 4 partitions for the following:
 
 - Enter `t` (To change the type of the partition to Linux home)
 
-- Enter `4` (You will now need to specify which partition you are referring to since now there are two or more)
+- Enter `3` (You will now need to specify which partition you are referring to since now there are two or more)
 
 - Enter `L` (To get a list of all partition types Linux home should be 28)
 
@@ -173,7 +173,7 @@ Now you can run `fdisk -l` to see your newly created partitions
 
 ## Format the partitions
 
-We have to create 3 file systems here and enable the swap partition, so let's get started
+We have to create 3 file systems here, so let's get started
 
 - Format the EFI partition with:
 
@@ -181,33 +181,26 @@ We have to create 3 file systems here and enable the swap partition, so let's ge
 mkfs.vfat /dev/sda1
 ```
 
-- Format the Swap partition with:
-
-```
-mkswap /dev/sda2
-swapon /dev/sda2
-```
-
 - Format the Root partition with:
 
 ```
-mkfs.ext4 /dev/sda3
+mkfs.ext4 /dev/sda2
 ```
 
 - Format the Home partition with:
 
 ```
-mkfs.ext4 /dev/sda4
+mkfs.ext4 /dev/sda3
 ```
 
 ## Mount the filesystems
 
-You will need to mount sda1, sda3 and sda4
+You will need to mount sda1, sda2 and sda3, but you will need to mount Root first
 
-- Mount sda3 (Root)
+- Mount sda2 (Root)
 
 ```
-mount /dev/sda3 /mnt
+mount /dev/sda2 /mnt
 ```
 
 - Mount sda1 (Boot)
@@ -217,28 +210,32 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 ```
 
-- Mount sda4 (Home)
+- Mount sda3 (Home)
 
 ```
 mkdir /mnt/home
-mount /dev/sda4 /mnt/home
+mount /dev/sda3 /mnt/home
 ```
+
+### Check mounts are correct
+
+You can run `df` to make sure your mounts are in the right place
 
 ## Install essential packages (and a few others)
 
 Run the following:
 
 ```
-pacstrap /mnt base base-devel linux linux-firmware vim man-db man-pages texinfo inetutils netctl dhcpcd 
+pacstrap /mnt base base-devel linux linux-firmware vim 
 ```
 
-If you have an intel processor also include `intel-ucode`
+If you have an intel processor also include `intel-ucode`, for AMD `amd-ucode`
 
 ## Configure the system
 
 ### Fstab
 
-Generate an fstab file
+Generate UUIDs for newly created filesystem
 
 ```
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -256,6 +253,30 @@ Now you can change root into the new system:
 
 ```
 arch-chroot /mnt
+```
+
+## Create a swap file
+
+I'm going to use the varibale X to indicate what your swap size should be 
+
+where X is RAM+sqrt(RAM)
+
+```
+fallocate -l XGB
+
+chmod 600 /swapfile
+
+mkswap /swapfile
+
+swapon /swapfile
+```
+
+## Add swapfile to fstab
+
+Add the following to fstab
+
+```
+/swapfile none swap default 0 0
 ```
 
 ### Time zone
@@ -318,39 +339,38 @@ Change the root password:
 passwd
 ```
 
+## Installing more packages
+
+Here we can install a few more packages for networking and things like man pages
+```
+pacman -S man-db man-pages texinfo inetutils netctl dhcpcd networkmanager wpa_supplicant wireless_tools dialog linux-headers network-manager-applet
+```
 ## Boot loader
 
-We'll be using `systemd-boot` for our boot-loader
-
-Let's point it to our boot directory:
+We'll be using grub because it has the biggest presence in the boot loader world
 
 ```
-bootctl --path=/boot install
+pacman -S grub efibootmgr os-prober mtools dosfstools 
 ```
 
-A good way to keep `systemd-boot` is to install the package `systemd-boot-pacman-hook`
-
-Now open `/boot/loader/loader.conf`
-
-and change default to the following: 
+Now let's install our boot loader
 
 ```
-default arch-*
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 ```
 
-Now create and entry in `/boot/loader/entries/arch.conf` and add the following
-
-Only add the ucode if you installed it, otherwise systemd won't boot
+Generate our config 
 
 ```
-title	Arch Linux
-linux	/vmlinuz-linux
-initrd	/<manufacturer>-ucode.img
-initrd	/initramfs-linux.img
-options root=UUID=<Some UUID for the root partition> rw
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-You can get the UUID in vim with `:r! blkid`
+## You're done
 
-If you dual boot with windows it is strongly recommended to disable Fast Startup
+Enter `exit` then `reboot`
 
+## Notes
+
+- arch boot mount to just /boot for windows
+- I'll make a windows dual boot if there is interest
+- If you dual boot with windows it is strongly recommended to disable Fast Startup
