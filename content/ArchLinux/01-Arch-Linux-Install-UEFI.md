@@ -67,7 +67,7 @@ Use the number you found earlier to bring up your interface:
 Then when it is up run Dhcp to pull an IP from the server:
 
 ```
- dhcpcd enp7s0 
+ dhcpcd enp39s0 
 ```
 
 Now try to ping again
@@ -262,7 +262,7 @@ I'm going to use the varibale X to indicate what your swap size should be
 where X is RAM+sqrt(RAM)
 
 ```
-fallocate -l XGB
+fallocate -l XGB /swapfile
 
 chmod 600 /swapfile
 
@@ -274,6 +274,8 @@ swapon /swapfile
 ## Add swapfile to fstab
 
 Add the following to fstab
+
+Open `/etc/fstab`
 
 ```
 /swapfile none swap default 0 0
@@ -306,9 +308,9 @@ locale-gen
 Create the `locale.conf` file, and set LANG variable
 
 ```
-/etc/locale.conf
+touch /etc/locale.conf
 
-LANG=en_US.UTF-8
+echo LANG=en_US.UTF-8 >> /etc/locale.conf
 ```
 
 ## Network configuration
@@ -316,19 +318,19 @@ LANG=en_US.UTF-8
 Create `hostname` file:
 
 ```
-/etc/hostname
+touch /etc/hostname
 
-mycoolhostname
+echo mycoolhostname >> /etc/hostname
 ```
 
 Add matching entries to `hosts`
 
 ```
-/etc/hosts
+vim /etc/hosts
 
-127.0.0.1	localhost
-::1		localhost
-127.0.1.1	myhostname.localdomain	myhostname
+127.0.0.1	  localhost
+::1		      localhost
+127.0.1.1	  mycoolhostname.localdomain  mycoolhostname
 ```
 
 ## Root password
@@ -350,7 +352,7 @@ pacman -S man-db man-pages texinfo inetutils netctl dhcpcd networkmanager wpa_su
 We'll be using grub because it has the biggest presence in the boot loader world
 
 ```
-pacman -S grub efibootmgr os-prober mtools dosfstools 
+pacman -S grub efibootmgr os-prober mtools
 ```
 
 Now let's install our boot loader
@@ -368,6 +370,14 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ## You're done
 
 Enter `exit` then `reboot`
+
+## Enable internet service
+
+```
+systemctl start dhcpcd.service
+
+systemctl enable dhcpcd.service
+```
 
 ## Notes
 
