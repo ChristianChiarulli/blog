@@ -21,14 +21,6 @@ sh ~/miniconda.sh -b -f -p  $HOME/.miniconda
 rm ~/miniconda.sh
 ```
 
-## Add Miniconda to your Path
-
-```bash
-echo 'export PATH="$HOME/.miniconda/bin:$PATH"' >> ~/.bashrc
-
-. ~/.bashrc
-```
-
 ## Setting up your shell
 
 If you don't want the conda base environment (you may not want this because as of now there are conflicts with later versions of Python and npm)
@@ -42,7 +34,7 @@ The first time you run it, it'll create a ./condarc in your home directory with 
 Now you can initialize your shell with the following command:
 
 ```bash
-conda init
+conda init $SHELL
 ```
 
 Now close your terminal and open a new one and your conda environment should be fully configured.

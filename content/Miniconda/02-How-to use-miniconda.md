@@ -10,7 +10,7 @@ The previous article explains how to properly install and configure Miniconda. T
 ## Creating a Virtual Environment
 
 ```bash
-conda create -name <myenv> python=<3.7> -y
+conda create --name <myenv> python=<3.7> -y
 ```
 
 This command will create a virtual environment with the following properties:
