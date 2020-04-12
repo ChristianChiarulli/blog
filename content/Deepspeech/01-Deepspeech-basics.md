@@ -64,7 +64,7 @@ So not perfect, but we can try it out on our own voice as well
 
 # Record a wav file
 
-For deepspeech to correctly run inference correctly you will need to record your voice with some specific parameters.
+For deepspeech to run inference correctly you will need to record your voice with some specific parameters.
 
 - Sampling rate: 16 kHz
 - Channel: 1
