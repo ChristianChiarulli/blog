@@ -133,7 +133,7 @@ Stream size                              : 64.0 KiB (100%)
 Now we can run inference on our own voice data 
 
 ```
-deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --audio audio/2830-3980-0043.wav
+deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --audio my_recording.wav
 ```
 
 ## Wrapping up
