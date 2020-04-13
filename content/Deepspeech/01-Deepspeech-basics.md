@@ -64,7 +64,7 @@ So not perfect, but we can try it out on our own voice as well
 
 # Record a wav file
 
-For deepspeech to correctly run inference correctly you will need to record your voice with some specific parameters.
+For deepspeech to run inference correctly you will need to record your voice with some specific parameters.
 
 - Sampling rate: 16 kHz
 - Channel: 1
@@ -133,7 +133,7 @@ Stream size                              : 64.0 KiB (100%)
 Now we can run inference on our own voice data 
 
 ```
-deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --audio audio/2830-3980-0043.wav
+deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --audio my_recording.wav
 ```
 
 ## Wrapping up
