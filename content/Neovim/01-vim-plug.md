@@ -1,8 +1,8 @@
 ---
 title: Plugins with Vim-Plug
 description: 
-date: '2020-23-04'
-image: "neovim.jpg"
+date: '2020-04-23'
+image: "neovim.png"
 tags: ['neovim']
 ---
 
