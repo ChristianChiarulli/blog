@@ -66,12 +66,12 @@ Add the following to `~/.config/nvim/vim-plug/plugins.vim`
 ```
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-	" Better Syntax Support
-	Plug 'sheerun/vim-polyglot'
-	" File Explorer
-	Plug 'scrooloose/NERDTree'
-	" Auto pairs for '(' '[' '{' 
-	Plug 'jiangmiao/auto-pairs'
+    " Better Syntax Support
+    Plug 'sheerun/vim-polyglot'
+    " File Explorer
+    Plug 'scrooloose/NERDTree'
+    " Auto pairs for '(' '[' '{' 
+    Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -82,7 +82,7 @@ call plug#end()
 Add the following line to `init.vim`
 
 ```
-source $HOME/.config/nvim/plugs/plugins.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
 ```
 
 ## Vim-plug commands
