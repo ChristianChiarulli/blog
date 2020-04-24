@@ -114,13 +114,13 @@ To update your plugins
 After the update you can press `d` to see the differences or run
 
 ```
-PlugDiff
+:PlugDiff
 ```
 
 To remove plugins that are no longer defined in the `plugins.vim` file
 
 ```
-PlugClean
+:PlugClean
 ```
 
 Finally if you want to upgrade vim-plug itself run the following

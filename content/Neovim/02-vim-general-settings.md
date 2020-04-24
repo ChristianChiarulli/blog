@@ -78,10 +78,10 @@ Again we'll create a directory called keys and and a file called mappings.vim
 ```
 mkdir ~/.config/nvim/keys
 
-touch ~/.config/nvim/keys/settings.vim
+touch ~/.config/nvim/keys/mappings.vim
 ```
 
-Add the following to settings.vim:
+Add the following to mappings.vim:
 
 ```
 " Better nav for omnicomplete
@@ -159,7 +159,7 @@ First we'll fix copy/paste
 - On Arch Linux
 
     ```
-    pacman -S xsel
+    sudo pacman -S xsel
     ```
 
 Next we need to install python support (node is optional)
@@ -188,5 +188,6 @@ let g:python3_host_prog = expand("~/.miniconda/envs/neovim/bin/python3.8") " <- 
 let g:node_host_prog = expand("<path to node with neovim installed>")
 let g:node_host_prog = expand("~/.nvm/versions/node/v12.16.1/bin/node") " <- example 
 ```
+
 
 Run `checkhealth` again and you should now see the requirements are met
