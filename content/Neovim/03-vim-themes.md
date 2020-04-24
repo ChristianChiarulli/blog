@@ -1,7 +1,7 @@
 ---
 title: Neovim Themes
 description: 
-date: '2020-04-24'
+date: '2020-04-25'
 image: "neovim.png"
 tags: ['neovim']
 ---
@@ -17,6 +17,8 @@ Open `vim-plug/plugins.vim` and add the following:
 ```
 Plug 'joshdick/onedark.vim'
 ```
+
+Make sure to run `:PlugInstall`
 
 ## Theme config
 
