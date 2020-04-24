@@ -163,4 +163,16 @@ Next we need to install python support (node is optional)
     npm i -g neovim
     ```
 
+### Note 
+
+If you use virtual environments I highly suggest putting these varibles in your config
+
+```
+let g:python3_host_prog = expand("<path to python with pynvim installed>")
+let g:python3_host_prog = expand("~/.miniconda/envs/neovim/bin/python3.8") " <- example
+
+let g:node_host_prog = expand("<path to node with neovim installed>")
+let g:node_host_prog = expand("~/.nvm/versions/node/v12.16.1/bin/node") " <- example 
+```
+
 Run `checkhealth` again and you should now see the requirements are met
