@@ -65,6 +65,12 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 cmap w!! w !sudo tee %
 ```
 
+Source in init.vim
+
+```
+source $HOME/.config/nvim/general/settings.vim
+```
+
 ## Mapping new keys
 
 Again we'll create a directory called keys and and a file called mappings.vim
@@ -119,6 +125,12 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+```
+
+Source in init.vim
+
+```
+source $HOME/.config/nvim/keys/mappings.vim
 ```
 
 ## Get healthy
