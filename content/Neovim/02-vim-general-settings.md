@@ -167,6 +167,8 @@ Next we need to install python support (node is optional)
 
 If you use virtual environments I highly suggest putting these varibles in your config
 
+I recommend putting this in paths.vim in the general directory
+
 ```
 let g:python3_host_prog = expand("<path to python with pynvim installed>")
 let g:python3_host_prog = expand("~/.miniconda/envs/neovim/bin/python3.8") " <- example
