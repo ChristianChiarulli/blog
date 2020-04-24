@@ -33,8 +33,6 @@ touch ~/.config/nvim/themes/onedark.vim
 Now let's set the colorscheme, open `onedark.vim` and add the following:
 
 ```
-" Switch to whatever colorscheme you like
-
 " onedark.vim override: Don't set a background color when running in a terminal;
 if (has("autocmd") && !has("gui_running"))
   augroup colorset
