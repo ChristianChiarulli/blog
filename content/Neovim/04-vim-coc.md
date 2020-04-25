@@ -22,7 +22,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 ```
 
-make sure you have `yarn installed if you choose the second way`
+make sure you have `yarn` installed if you choose the second way
 
 ```
 npm i -g yarn
