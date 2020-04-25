@@ -1,5 +1,5 @@
 ---
-title: Neovim COC
+title: Neovim Intellisense with coc
 description: 
 date: '2020-04-26'
 image: "neovim.png"
@@ -10,12 +10,20 @@ tags: ['neovim']
 
 This plugin is too featureful (bloated) to explain in a single blog post
 
-good thing the author provided extensive documentation [here](https://github.com/neoclide/coc.nvim/wiki)
+Good thing the author provided extensive documentation [here](https://github.com/neoclide/coc.nvim/wiki)
 
 ## Install with vim-plug
 
 ```
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+```
+
+Create a directory called `plugin-config` and an extry for `coc`
+
+```
+mkdir ~/.config/nvim/plugin-config
+
+touch ~/.config/nvim/plugin-config/coc.vim
 ```
 
 ## Create basic config file
