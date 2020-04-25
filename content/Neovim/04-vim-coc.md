@@ -18,12 +18,12 @@ Good thing the author provided extensive documentation [here](https://github.com
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ```
 
-Create a directory called `plugin-config` and an extry for `coc`
+Create a directory called `plug-config` and an extry for `coc`
 
 ```
-mkdir ~/.config/nvim/plugin-config
+mkdir ~/.config/nvim/plug-config
 
-touch ~/.config/nvim/plugin-config/coc.vim
+touch ~/.config/nvim/plug-config/coc.vim
 ```
 
 ## Create basic config file
