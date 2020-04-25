@@ -30,6 +30,12 @@ touch ~/.config/nvim/plug-config/coc.vim
 
 Head over to the [readme](https://github.com/neoclide/coc.nvim) and grab his example config
 
+Add the following to your `init.vim`
+
+```
+source $HOME/.config/nvim/plug-config/coc.vim
+```
+
 ## Checking coc health
 
 You can run `:checkhealth` and there should now be an entry for `coc` 
@@ -140,5 +146,5 @@ then
   echo '{"dependencies":{}}'> package.json
 fi
 # Change extension names to the extensions you need
-npm install coc-snippets coc-python coc-javascript coc-html coc-css coc-json coc-yaml --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+npm install coc-snippets coc-python coc-tsserver coc-html coc-css coc-json coc-yaml --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 ```
