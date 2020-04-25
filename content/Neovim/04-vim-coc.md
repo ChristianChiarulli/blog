@@ -28,7 +28,7 @@ make sure you have `yarn installed if you choose the second way`
 npm i -g yarn
 ```
 
-Create a directory called `plug-config` and an extry for `coc`
+Create a directory called `plug-config` and an entry for `coc`
 
 ```
 mkdir ~/.config/nvim/plug-config
