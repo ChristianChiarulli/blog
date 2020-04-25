@@ -15,7 +15,17 @@ Good thing the author provided extensive documentation [here](https://github.com
 ## Install with vim-plug
 
 ```
+" Stable version of coc
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Keeping up to date with master
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+```
+
+make sure you have `yarn installed if you choose the second way`
+
+```
+npm i -g yarn
 ```
 
 Create a directory called `plug-config` and an extry for `coc`
