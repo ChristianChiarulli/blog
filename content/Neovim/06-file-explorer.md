@@ -1,7 +1,7 @@
 ---
 title: Exploring coc-explorer
 description: 
-date: '2020-04-27'
+date: '2020-04-28'
 image: "neovim.png"
 tags: ['neovim']
 ---

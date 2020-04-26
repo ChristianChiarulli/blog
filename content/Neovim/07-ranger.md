@@ -1,7 +1,7 @@
 ---
 title: Integrate Neovim with Ranger
 description: 
-date: '2020-04-28'
+date: '2020-04-29'
 image: "neovim.png"
 tags: ['neovim']
 ---
