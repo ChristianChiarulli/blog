@@ -150,3 +150,13 @@ command! -bang -nargs=* GGrep
 - [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 
 - [fd](https://github.com/sharkdp/fd)
+
+## Note on extra keybindings
+
+```
+/usr/share/fzf/completion.zsh
+/usr/share/fzf/key-bindings.zsh
+
+/usr/share/fzf/completion.bash
+/usr/share/fzf/key-bindings.bash
+```
