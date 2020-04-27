@@ -56,11 +56,12 @@ First let's just install a bunch of awesome tools to help you search/find stuff
     ```
 
 
-## Plug it into vim
+## Plug FZF & vim-rooter into vim
 
 ```
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 ```
 
 ## Configuration
