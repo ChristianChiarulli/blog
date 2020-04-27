@@ -165,13 +165,6 @@ It is sufficient to source these files below in your bashrc or zshrc for complet
 /usr/share/fzf/key-bindings.bash
 ```
 
-I also recommend adding the folowing to respect `.gitignore` but also see your hidden files
-
-```
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-```
-
-
 ## Another note
 
 From the Archwiki, commands to query packages and install them
