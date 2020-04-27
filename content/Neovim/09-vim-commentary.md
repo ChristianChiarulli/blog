@@ -24,3 +24,7 @@ vnoremap <space>/ :Commentary<CR>
 Just press <space>/ and it will comment out the line
 
 In visual mode select the text you want to comment out and press <space>/
+
+## Link to repo
+
+[commentary](https://github.com/tpope/vim-commentary)

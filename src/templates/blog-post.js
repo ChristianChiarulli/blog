@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 import PrevNext from '../components/prevnext'
 import MetaTags from '../components/Metatags'
 import Share from '../components/share'
@@ -14,8 +14,8 @@ function BlogPost(props) {
   const thumbnail =
     props.data.markdownRemark.frontmatter.image &&
     props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
-  const { title, image, tags } = props.data.markdownRemark.frontmatter
-  const { prev, next } = props.pageContext
+  const {title, image, tags} = props.data.markdownRemark.frontmatter
+  const {prev, next} = props.pageContext
   return (
     <Layout>
       <MetaTags
@@ -29,14 +29,14 @@ function BlogPost(props) {
         <h1>{title}</h1>
         {image && <Img fluid={image.childImageSharp.fluid} />}
         <div
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+          dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}
           className='markdown-body'
         />
         <div>
           <br />
           <span>Tagged in </span>
           {tags.map((tag, i) => (
-            <a href={`/${tag}`} key={i} style={{ marginLeft: '10px' }}>
+            <a href={`/${tag}`} key={i} style={{marginLeft: '10px'}}>
               {tag}
             </a>
           ))}
