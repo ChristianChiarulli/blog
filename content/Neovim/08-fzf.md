@@ -1,5 +1,5 @@
 ---
-title: Integrate Neovim with FZF
+title: Integrate Neovim with FZF & more awesome search stuff
 description: 
 date: '2020-04-30'
 image: "neovim.png"
@@ -153,10 +153,33 @@ command! -bang -nargs=* GGrep
 
 ## Note on extra keybindings
 
+Read more about keybindings [here](https://wiki.archlinux.org/index.php/Fzf)
+
+It is sufficient to source these files below in your bashrc or zshrc for completion and keybindings
+
 ```
 /usr/share/fzf/completion.zsh
 /usr/share/fzf/key-bindings.zsh
 
 /usr/share/fzf/completion.bash
 /usr/share/fzf/key-bindings.bash
+```
+
+I also recommend adding the folowing to respect `.gitignore` but also see your hidden files
+
+```
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+```
+
+
+## Another note
+
+From the Archwiki, commands to query packages and install them
+
+```
+sudo pacman -Fy # <- only run this once
+
+pacman -Slq | fzf -m --preview 'cat <(pacman -Si {1}) <(pacman -Fl {1} | awk "{print \$2}")' | xargs -ro sudo pacman -S
+
+yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S
 ```
