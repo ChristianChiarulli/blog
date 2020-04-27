@@ -1,5 +1,5 @@
 ---
-title: Integrate Neovim with FZF & more awesome search stuff
+title: Integrate Neovim with FZF & more
 description: 
 date: '2020-04-30'
 image: "neovim.png"
