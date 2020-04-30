@@ -73,9 +73,9 @@ Install `luarocks` if you want to use with `coc-lua`
 Enter the following to see what happens
 
 ```
-#803fc3
-rgb(18, 0, 34)
-rgb(100%, 10%, 46%)
+#8F6fEa
+rgb(113, 146, 230)
+rgb(7%, 77%, 46%)
 ```
 
 ## Checkout the repo
