@@ -1,119 +1,40 @@
 ---
-title: Project Management with Startify
+title: Git integration
 description: 
-date: '2020-05-01'
+date: '2020-05-02'
 image: "neovim.png"
 tags: ['neovim']
 ---
 
-## Plug in Startify
+## Plugins
+
+We're going to be looking at 3 plugins that bring a good integrate git experience to Neovim
 
 ```
-Plug 'mhinz/vim-startify'
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 ```
 
-## Create a config file
+## Create config files
 
 ```
-touch ~/.config/nvim/plug-config/start-screen.vim
+touch ~/.config/nvim/plug-config/signify.vim
+touch ~/.config/nvim/plug-config/fugitive.vim
+touch ~/.config/nvim/plug-config/gv.vim
 ```
 
-## Sessions
+## Configure Signify
 
-This plugin will let us manage our sessions very easily
+Signify will show **added**, **modified**, or **removed** lines
 
-```
-:SLoad       load a session
-:SSave[!]    save a session
-:SDelete[!]  delete a session
-:SClose      close a session
-```
-
-Add ! to skip the prompt
-
-We should specify where we want Startify to keep our sessions
+You can also stage and unstage hunks
 
 ```
-let g:startify_session_dir = '~/.config/nvim/session'
-```
-
-## Startify Lists
-
-We can specify what shows up in our menu like this:
 
 ```
-let g:startify_lists = [
-          \ { 'type': 'files',     'header': ['   MRU']            },
-          \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
-          \ { 'type': 'sessions',  'header': ['   Sessions']       },
-          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-          \ ]
-```
 
-## Configuration options
+### Commands
 
-You can automatically restart a session like this
 
-```
-let g:startify_session_autoload = 1
-```
 
-From the docs:
-
-"If this option is enabled and you start Vim in a directory that contains a
-`Session.vim`, that session will be loaded automatically. Otherwise it will be
-shown as the top entry in the Startify buffer."
-
-Let Startify take care of buffers
-
-```
-let g:startify_session_delete_buffers = 1
-```
-
-Similar to Vim-rooter
-
-```
-let g:startify_change_to_vcs_root = 1
-```
-
-If you want Unicode
-
-```
-let g:startify_fortune_use_unicode = 1
-```
-
-Automatically Update Sessions
-
-```
-let g:startify_session_persistence = 1
-```
-
-Get rid of empy buffer and quit
-
-```
-let g:startify_enable_special = 0
-```
-
-## Add a custom header
-
-```
-let g:startify_custom_header = [
-        \ '   _  __     _         __  ___         __     ___ ',
-        \ '  / |/ /  __(_)_ _    /  |/  /__ _____/ /    |_  |',
-        \ ' /    / |/ / /  ` \  / /|_/ / _ `/ __/ _ \  / __/ ',
-        \ '/_/|_/|___/_/_/_/_/ /_/  /_/\_,_/\__/_//_/ /____/ ',
-        \]
-```
-
-## Bookmarks
-
-```
-let g:startify_bookmarks = [
-            \ { 'c': '~/.config/i3/config' },
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
-            \ '~/Blog',
-            \ '~/Code',
-            \ '~/Pics',
-            \ ]
-```
