@@ -13,8 +13,8 @@ We're going to be looking at 3 plugins that bring a good integrate git experienc
 ```
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 ```
 
 ## Create config files
@@ -23,8 +23,9 @@ Plug 'tpope/vim-rhubarb'
 touch ~/.config/nvim/plug-config/signify.vim
 touch ~/.config/nvim/plug-config/fugitive.vim
 touch ~/.config/nvim/plug-config/gv.vim
-touch ~/.config/nvim/plug-config/rhubarb.vim
 ```
+
+rhubarb config will go with fugitive since they are tightly coupled
 
 Make sure to source these files in `init.vim`
 
@@ -90,7 +91,7 @@ let g:signify_sign_show_text = 1
 " Jump though hunks
 nmap <leader>gj <plug>(signify-next-hunk)
 nmap <leader>gk <plug>(signify-prev-hunk)
-nmap <leader>gJ 9999<leader>gj
+nmap <leader>gK 9999<leader>gk
 nmap <leader>gK 9999<leader>gk
 
 
@@ -103,6 +104,73 @@ nmap <leader>gK 9999<leader>gk
 
 There are more commands but I prefer the options fugitive and gv provide
 
-## Fugitive 
+## Fugitive / Rhubarb
+
+This plugin is what we'll use for interacting with git 
+
+**Note** GBrowse only works when Rhubarb is installed
+
+**Note** Make sure you are using git through ssh not http
+
+### Commands
+
+```
+:Git add 
+
+:Git commit
+
+:Git push
+
+:Git pull
+
+:Git diff
+
+:Git log
+
+:Git blame
+
+Gdiffsplit
+
+GRemove
+
+GBrowse 
+```
+
+## GV
 
 
+### Commands
+
+From the readme: "A git commit browser."
+
+To open commit browser:
+
+```
+:GV
+```
+
+You can pass git log options to the command, e.g. :GV -S foobar.
+
+### Other options
+
+```
+:GV!         # will only list commits that affected the current file
+:GV?         # fills the location list with the revisions of the current file
+:GV          # or :GV? can be used in visual mode to track the changes in the selected lines.
+```
+
+### Mappings
+
+- o or <cr> on a commit to display the content of it
+
+- o or <cr> on commits to display the diff in the range
+
+- O opens a new tab instead
+
+- gb for :Gbrowse
+
+- ]] and [[ to move between commits
+
+- . to start command-line with :Git [CURSOR] SHA à la fugitive
+
+- q or gq to close
