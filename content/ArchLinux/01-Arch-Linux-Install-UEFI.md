@@ -345,7 +345,7 @@ passwd
 
 Here we can install a few more packages for networking and things like man pages
 ```
-pacman -S man-db man-pages texinfo inetutils netctl dhcpcd networkmanager wpa_supplicant wireless_tools dialog linux-headers network-manager-applet
+pacman -S man-db man-pages texinfo inetutils netctl dhcpcd networkmanager wpa_supplicant dialog linux-headers network-manager-applet
 ```
 ## Boot loader
 
