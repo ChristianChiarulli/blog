@@ -8,7 +8,7 @@ tags: ['neovim']
 
 ## Plugins
 
-We're going to be looking at 3 plugins that bring a good integrate git experience to Neovim
+We're going to be looking at 4 plugins that bring a good integrate git experience to Neovim
 
 ```
 Plug 'mhinz/vim-signify'
@@ -174,3 +174,13 @@ You can pass git log options to the command, e.g. :GV -S foobar.
 - . to start command-line with :Git [CURSOR] SHA à la fugitive
 
 - q or gq to close
+
+## Check out the repos here
+
+[signify](https://github.com/mhinz/vim-signify)
+
+[fugitive](https://github.com/tpope/vim-fugitive)
+
+[rhubarb](https://github.com/tpope/vim-rhubarb)
+
+[gv](https://github.com/junegunn/gv.vim)
