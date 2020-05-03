@@ -23,9 +23,7 @@ Plug 'junegunn/gv.vim'
 touch ~/.config/nvim/plug-config/signify.vim
 ```
 
-rhubarb config will go with fugitive since they are tightly coupled
-
-Make sure to source these files in `init.vim`
+Make sure to source this file in `init.vim`
 
 ### Configure Signify
 
