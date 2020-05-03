@@ -22,7 +22,6 @@ Plug 'junegunn/gv.vim'
 ```
 touch ~/.config/nvim/plug-config/signify.vim
 touch ~/.config/nvim/plug-config/fugitive.vim
-touch ~/.config/nvim/plug-config/gv.vim
 ```
 
 rhubarb config will go with fugitive since they are tightly coupled
