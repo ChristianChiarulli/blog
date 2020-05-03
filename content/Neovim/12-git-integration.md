@@ -61,22 +61,6 @@ You can also stage and unstage hunks
 Here's some config for changing the buffer signs
 
 ```
-let g:signify_sign_add               = '+'
-let g:signify_sign_delete            = '_'
-let g:signify_sign_delete_first_line = '‾'
-let g:signify_sign_change            = '~'
-```
-
-### Commands
-
-Here are the commands I use:
-
-```
-:SignifyToggle
-:SignifyToggleHighlight
-```
-
-```
 " Change these if you want
 let g:signify_sign_add               = '+'
 let g:signify_sign_delete            = '_'
@@ -101,6 +85,14 @@ nmap <leader>gK 9999<leader>gk
 " highlight SignifySignChange ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ffff00
 ```
 
+### Commands
+
+Here are the commands I use:
+
+```
+:SignifyToggle
+:SignifyToggleHighlight
+```
 
 There are more commands but I prefer the options fugitive and gv provide
 
