@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/app.css'
 
 const PrevNext = props => {
-  const { prev, next } = props
+  const {prev, next} = props
 
   return (
     <div className='prevnext'>
