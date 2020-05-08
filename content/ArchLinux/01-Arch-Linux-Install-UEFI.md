@@ -26,6 +26,7 @@ ls /usr/share/kbd/keymaps/**/*.map.gz
 
 - Now set the one you want, here's an example:
 
+
 ```
 loadkeys de-latin1
 ```
