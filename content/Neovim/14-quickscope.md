@@ -26,7 +26,7 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 
 ## Quickscope
 
-Form the github repo:
+From the github repo:
 
 "An always-on highlight for a unique character in every word on a line to help you use f, F and family."
 
@@ -38,7 +38,7 @@ Form the github repo:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 highlight QuickScopePrimary guifg='#00C7DF' gui=underline ctermfg=155 cterm=underline
-highlight QuickScopeSecondary guifg='#afff5f' gui=underline ctermfg=81 cterm=underline
+highlight QuickScopeSecondary guifg='#eF5F70' gui=underline ctermfg=81 cterm=underline
 
 let g:qs_max_chars=150
 ```
