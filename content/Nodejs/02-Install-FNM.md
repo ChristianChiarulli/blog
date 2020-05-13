@@ -23,7 +23,7 @@ curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- 
 ## Upgrade
 
 ```sh
-curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s --install-dir $HOME/.config/fnm --skip-shell
+curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.config/fnm --skip-shell
 ```
 
 ## List install candidates
