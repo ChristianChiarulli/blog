@@ -115,13 +115,28 @@ systemctl list-unit-files --state=enabled
 pacman -S i3-gaps i3status i3lock dmenu
 ```
 
+I'm using i3 but you can install any WM or DE you like best
+
+Here are some WM options:
+
+- dwm
+- awesome
+- bspwm
+- xmonad
+
+Here are some DE options:
+
+- XFCE
+- KDE
+- Gnome
+
 ## Install a terminal emulator
 
 ```
 pacman -S alacritty
 ```
 
-I'm using Alacritty but you can install and terminal emulator you want
+I'm using Alacritty but you can install any terminal emulator you want
 
 Here are some options:
 
