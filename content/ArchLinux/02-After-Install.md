@@ -1,5 +1,5 @@
 ---
-title: What to do after install Arch Linux
+title: What to do after installing Arch Linux
 description: description
 date: "2020-05-13"
 image: "arch-logo.png"
