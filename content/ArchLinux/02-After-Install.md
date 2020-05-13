@@ -3,7 +3,7 @@ title: What to do after installing Arch Linux
 description: description
 date: "2020-05-13"
 image: "arch-logo.png"
-tags: ["linux"]
+tags: ["archlinux"]
 ---
 
 ## Setup your network
@@ -101,6 +101,8 @@ pacman -S xorg-server xorg-xinit
 pacman -S lightdm
 
 pacman -S lightdm-gtk-greeter
+
+pacman -S lightdm-gtk-greeter-settings
 ```
 
 ## Enable lightdm service
