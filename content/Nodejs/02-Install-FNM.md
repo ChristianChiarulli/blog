@@ -1,5 +1,5 @@
 ---
-title: Installing Fast Node Manager (fnm) for Node.js
+title: Installing Fast Node Manager (fnm)
 description: description
 date: "2020-05-12"
 image: "fnm.png"
@@ -73,3 +73,7 @@ fnm default 13.14.0
 ## Wrapping up
 
 Versioning `node` should be much faster now
+
+## Link to Author
+
+[fnm](https://github.com/Schniz/fnm)
