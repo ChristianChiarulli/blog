@@ -11,7 +11,7 @@ tags: ["linux"]
 ```
 ping archlinux.org
 
-pacman -S networkmanager network-manager-applet-indicator
+pacman -S networkmanager network-manager-applet
 ```
 
 ## Enable NetworkManager service
@@ -20,6 +20,12 @@ pacman -S networkmanager network-manager-applet-indicator
 systemctl start NetworkManager
 
 systemctl enable NetworkManager
+```
+
+## Connect to Network
+
+```
+nmtui
 ```
 
 Here we will simply add a new user to our system and give them wheel access
@@ -129,6 +135,12 @@ Here are some DE options:
 - XFCE
 - KDE
 - Gnome
+
+### Install DE (Optional)
+
+```
+pacman -S xfce4
+```
 
 ## Install a terminal emulator
 
