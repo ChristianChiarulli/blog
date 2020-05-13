@@ -17,13 +17,13 @@ sudo apt install curl
 The following command will automatically install fnm using `curl`
 
 ```sh
-curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.config/fnm
+curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin
 ```
 
 ## Upgrade
 
 ```sh
-curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.config/fnm --skip-shell
+curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin --skip-shell
 ```
 
 ## List install candidates
