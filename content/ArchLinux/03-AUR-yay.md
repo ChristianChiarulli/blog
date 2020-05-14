@@ -66,6 +66,8 @@ Some basics to get you started:
 
   ```
   yay -Syu             # <- includes all packages even if installed with pacman
+
+  yay                  # <- this does the same thing
   ```
 
 - Search for a package
@@ -95,6 +97,10 @@ Remember `man yay` should be your goto
 ## Note on different types of packages
 
 [reddit link with explanation](https://www.reddit.com/r/archlinux/comments/ggnu97/what_is_the_difference_between_versions_of_the/)
+
+# Enable color output
+
+Make sure you have the Color option set in your `/etc/pacman.conf`
 
 ## AUR can be dangerous
 
