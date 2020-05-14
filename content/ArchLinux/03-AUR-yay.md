@@ -100,7 +100,7 @@ Remember `man yay` should be your goto
 
 [reddit link with explanation](https://www.reddit.com/r/archlinux/comments/ggnu97/what_is_the_difference_between_versions_of_the/)
 
-# Enable color output
+## Enable color output
 
 Make sure you have the Color option set in your `/etc/pacman.conf`
 
