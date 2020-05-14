@@ -110,6 +110,12 @@ Technically not all of the content up there is vetted.
 
 So make sure what you download has lots of votes or that you have inspected the source code
 
+## FZF Search
+
+```
+yay -Slq | fzf -m --preview 'cat <(yay -Si {1}) <(yay -Fl {1} | awk "{print \$2}")' | xargs -ro  yay -S
+```
+
 ## Links
 
 [yay](https://github.com/Jguer/yay)
