@@ -1,5 +1,5 @@
 ---
-title: How to install packages for AUR with yay
+title: Install packages for AUR with yay
 description: description
 date: "2020-05-14"
 image: "arch-logo.png"
