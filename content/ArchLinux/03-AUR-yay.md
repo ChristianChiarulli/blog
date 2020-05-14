@@ -68,6 +68,8 @@ Some basics to get you started:
   yay -Syu             # <- includes all packages even if installed with pacman
 
   yay                  # <- this does the same thing
+
+  yay -Syu --devel     # <- includes -git installed packges
   ```
 
 - Search for a package
