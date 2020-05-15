@@ -1,9 +1,9 @@
 ---
 title: Which Key
 description:
-date: '2020-05-03'
+date: "2020-05-03"
 image: "neovim.png"
-tags: ['neovim']
+tags: ["neovim"]
 ---
 
 ## Install
@@ -12,7 +12,6 @@ tags: ['neovim']
 Plug 'liuchengxu/vim-which-key'
 ```
 
-
 ## Create config file
 
 ```
@@ -20,6 +19,7 @@ touch ~/.config/nvim/keys/which-key.vim
 ```
 
 Make sure to source this file in `init.vim`
+
 ```
 source $HOME/.config/nvim/keys/which-key.vim
 ```
@@ -29,7 +29,6 @@ source $HOME/.config/nvim/keys/which-key.vim
 From the github repo:
 
 "vim-which-key is vim port of emacs-which-key that displays available keybindings in popup."
-
 
 ### Configure Which Key
 
@@ -100,14 +99,12 @@ let g:which_key_map.s = {
       \ }
 ```
 
-### Quickscope Commands
+### WhichKey Commands
 
 ```
 <leader>{char}
 ```
 
-## Link to Quickscope repo
+## Link to WhichKey repo
 
 [WhichKey](https://github.com/liuchengxu/vim-which-key)
-
-
