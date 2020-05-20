@@ -49,8 +49,8 @@ const IndexPage = props => {
           </div>
           <div className={style.content}>
             <span>
-              I have a pretty popular Neovim config onver on Github if you're
-              interested. A lot of the process to crete it has been documented
+              I have a pretty popular Neovim config over on Github if you're
+              interested. A lot of the process to create it has been documented
               here.
             </span>
           </div>
