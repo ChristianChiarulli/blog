@@ -6,44 +6,28 @@ import Img from "gatsby-image"
 import style from "../components/post-list.module.less"
 import { slugify } from "../../utils/Utilities"
 import Pager from "../components/pager"
+import Post from "../components/post"
 
 const Tags = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
+  console.log(posts)
   const { tag } = pageContext
   return (
     <Layout>
-      <h1 style={{ textAlign: "center", marginTop: "-80px" }}>
+      <h1 style={{ textAlign: "center", marginTop: "80px" }}>
         Topic: <span style={{ color: "#61afef" }}>{tag}</span>
       </h1>
-      {posts.map(({ node }, i) => {
-        return (
-          <div className={style.card}>
-            <div>
-              <div key={node.title} className={style.post}>
-                <div className={style.cover}>
-                  <Link to={node.fields.slug} key={i}>
-                    <Img
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                      title={node.excerpt}
-                      alt={node.title}
-                    />
-                  </Link>
-                </div>
-                <Link to={node.fields.slug} key={i}>
-                  <div className={style.content}>
-                    <h2>{node.frontmatter.title}</h2>
-                    <label>by: {node.frontmatter.author}, </label>
-                    {node.frontmatter.date ? (
-                      <label>{node.frontmatter.date}</label>
-                    ) : null}
-                    <p>{node.excerpt}</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        )
-      })}
+      {posts.map(({ node }) => (
+        <Post
+          title={node.frontmatter.title}
+          author={node.frontmatter.author}
+          date={node.frontmatter.date}
+          body={node.excerpt}
+          slug={node.fields.slug}
+          tags={node.frontmatter.tags}
+          fluid={node.frontmatter.image.childImageSharp.fluid}
+        />
+      ))}
       <Pager pageContext={pageContext} />
     </Layout>
   )
@@ -51,20 +35,26 @@ const Tags = ({ data, pageContext }) => {
 
 export default Tags
 
-export const query = graphql`
-  query TagsQuery($tag: String!, $limit: Int!) {
+export const TagListQuery = graphql`
+  query TagListQuery($skip: Int!, $limit: Int!, $tag: String!) {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
       filter: { frontmatter: { tags: { eq: $tag } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
+          id
+          fields {
+            slug
+          }
           excerpt(pruneLength: 100)
           frontmatter {
             author
             date(formatString: "MMMM Do YYYY")
             title
+            tags
             image {
               childImageSharp {
                 resize(width: 100, height: 200) {
@@ -75,9 +65,6 @@ export const query = graphql`
                 }
               }
             }
-          }
-          fields {
-            slug
           }
         }
       }
