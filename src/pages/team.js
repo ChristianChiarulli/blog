@@ -3,12 +3,13 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Col, Row, Container } from "reactstrap"
 
-const AboutPage = () => (
+const TeamPage = () => (
   <Layout>
-    <SEO title="About us.." keywords={["chris@machine"]} />
+    <SEO title="Team" keywords={["chris@machine"]} />
+    <h1> Out team. </h1>
   </Layout>
 )
 
-export default AboutPage
+export default TeamPage
+

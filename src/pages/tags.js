@@ -1,16 +1,17 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
-import '../css/app.css'
-// import './post.css'
+import React from "react"
+import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import style from "./tags.module.less"
 
 function TagsPage(props) {
   const data = props.data.allMarkdownRemark.group
 
   return (
     <Layout>
-      <h1>All Topics</h1>
-      <div style={userStyle}>
+      <SEO title="Tags" keywords={["chris@machine"]} />
+      <h1 style={{ textAlign: "center" }}>All Topics</h1>
+      <div className={style.container} style={userStyle}>
         {data.map(tag => (
           <Link to={`/${tag.fieldValue}`} className=" my-1 card text-center">
             <h2>
@@ -23,9 +24,9 @@ function TagsPage(props) {
   )
 }
 const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gridGap: '1rem'
+  display: "grid",
+  gridTemplateColumns: "repeat(3, 1fr)",
+  gridGap: "1rem",
 }
 
 export default TagsPage

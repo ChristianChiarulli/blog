@@ -1,0 +1,21 @@
+@import (reference) '../style/index.less';
+
+.container {
+    .flex-center();
+    justify-content: center;
+    flex-direction: column;
+    @media @mobile {
+        flex-direction: column;
+    }
+    h1, h2, p {
+    text-align: center;
+        margin: @margin-zero @margin-zero @margin-zero @margin-zero;
+        padding: 20px;
+        color: #61afef
+    };
+h2:hover {
+  // box-shadow: 0 -1px 4px #61afef;
+  border: 1px solid #61afef;
+}
+}
+

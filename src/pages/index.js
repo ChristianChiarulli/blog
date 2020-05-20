@@ -1,42 +1,32 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import '../css/post.css'
-import Layout from '../components/layout'
+import React from "react"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { graphql } from "gatsby"
+import Me from "../images/me2.jpg"
+import style from "./index.module.less"
 
 const IndexPage = props => {
-  const postList = props.data.allMarkdownRemark
   return (
     <Layout>
-      {postList.edges.map(({ node }, i) => (
-        <Link to={node.fields.slug} key={i} className="link">
-          <div className="post-list">
-            <h1>{node.frontmatter.title}</h1>
-            <span>{node.frontmatter.date}</span>
-            <p>{node.excerpt}</p>
+      <div className={style.card}>
+        <div className={style.post}>
+          <div className={style.cover}>
+            <img
+              src={Me}
+              height="200px"
+              width="200px"
+              style={{ borderRadius: "50%" }}
+              alt="Me"
+            />
           </div>
-        </Link>
-      ))}
+          <div className={style.content}>
+            <span>My name is Christian, you're probably here for my blog</span>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }
-
 export default IndexPage
-
-export const listQuery = graphql`
-  query ListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM Do YYYY")
-            title
-          }
-        }
-      }
-    }
-  }
-`

@@ -1,2 +1,1 @@
-# Blog created with Gatsbyjs
-
+# 🚀 Tech Blog
