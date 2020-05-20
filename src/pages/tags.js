@@ -11,7 +11,7 @@ function TagsPage(props) {
     <Layout>
       <SEO title="Tags" keywords={["chris@machine"]} />
       <h1 style={{ textAlign: "center" }}>All Topics</h1>
-      <div className={style.container} style={userStyle}>
+      <div className={style.container}>
         {data.map(tag => (
           <Link to={`/${tag.fieldValue}`} className=" my-1 card text-center">
             <h2>
@@ -23,17 +23,12 @@ function TagsPage(props) {
     </Layout>
   )
 }
-const userStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(3, 1fr)",
-  gridGap: "1rem",
-}
 
 export default TagsPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(limit: 2000) {
+    allMarkdownRemark(limit: 3000) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount

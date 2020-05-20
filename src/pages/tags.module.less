@@ -4,18 +4,28 @@
     .flex-center();
     justify-content: center;
     flex-direction: column;
-    @media @mobile {
-        flex-direction: column;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+
     h1, h2, p {
     text-align: center;
         margin: @margin-zero @margin-zero @margin-zero @margin-zero;
         padding: 20px;
         color: #61afef
     };
-h2:hover {
-  // box-shadow: 0 -1px 4px #61afef;
-  border: 1px solid #61afef;
-}
+
+    h2:hover {
+      box-shadow: 0 -1px 4px #61afef;
+      border: 1px solid #61afef;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
 }
 
