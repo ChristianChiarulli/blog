@@ -61,10 +61,17 @@
         list-style: none;
         .flex-center();
         flex-wrap: nowrap;
+        height: 8vh;
+        font-size: 1.5em;
+        // height: 100%;
+        // display: block;
+        // height: 1000px;
+        // background-color: #456;
         margin: @margin-zero @margin-medium;
         padding: @padding-zero;
         @media @mobile {
             margin-top: @margin-small;
+            margin-bottom: @margin-small;
         }
         li {
             margin: @margin-zero @margin-small;
@@ -105,7 +112,7 @@
 
 .expandedMenu {
     @media @mobile {
-        max-height: 100px;
+        // background-color: #456;
         opacity: .8;
         transition: @transition-time max-height ease,
                     @transition-time opacity ease;

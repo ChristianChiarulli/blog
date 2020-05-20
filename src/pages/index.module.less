@@ -78,6 +78,31 @@
   box-shadow: @box-shadow-cover;
 }
 
+ul {
+    list-style: none;
+    .flex-center();
+    flex-wrap: nowrap;
+    height: 8vh;
+    font-size: 1.5em;
+    margin: @margin-zero @margin-medium;
+    padding: @padding-zero;
+    @media @mobile {
+        margin-top: @margin-small;
+        margin-bottom: @margin-small;
+    }
+    li {
+        margin: @margin-zero @margin-small;
+        a {
+            // text-transform: uppercase;
+            transition: @transition-time color;
+            &:hover {
+                cursor: pointer;
+                color: #c678dd;
+            }
+        }
+    }
+}
+
 ul.postTags {
   padding: 0;
   display: inline-flex;

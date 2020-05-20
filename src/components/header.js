@@ -58,28 +58,48 @@ const Header = () => {
         </ul>
         <ul>
           <li>
-            <a target="_blank" rel="nofollow noopener noreferrer" href={"/"}>
-              <FaGithub size="30" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://github.com/ChristianChiarulli"}
+            >
+              <FaGithub color="#FFFFFF" size="30" />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="nofollow noopener noreferrer" href={"/"}>
-              <FaPatreon size="30" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://www.patreon.com/chrisatmachine"}
+            >
+              <FaPatreon color="#E8715C" size="30" />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="nofollow noopener noreferrer" href={"/"}>
-              <FaDiscord size="30" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://discord.gg/Xb9B4Ny"}
+            >
+              <FaDiscord color="#768AD4" size="30" />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="nofollow noopener noreferrer" href={"/"}>
-              <FaLinkedin size="30" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://www.linkedin.com/in/christianchiarulli/"}
+            >
+              <FaLinkedin color="#3077B0" size="30" />
             </a>
           </li>
           <li>
-            <a target="_blank" rel="nofollow noopener noreferrer" href={"/"}>
-              <FaYoutube size="30" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA"}
+            >
+              <FaYoutube color="#EB3323" size="30" />
             </a>
           </li>
           {/* <li> */}

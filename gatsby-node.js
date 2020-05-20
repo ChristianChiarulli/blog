@@ -95,13 +95,6 @@ exports.createPages = async ({ actions, graphql }) => {
         tag,
       },
     })
-    // createPage({
-    //   path: `/${_.kebabCase(tag)}/`,
-    //   component: tagsTemplate,
-    //   context: {
-    //     tag,
-    //   },
-    // })
   })
 
   posts.forEach(({ node }, index) => {

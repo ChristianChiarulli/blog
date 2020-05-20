@@ -9,6 +9,7 @@ const postList = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <h1 style={{ textAlign: "center", marginTop: "80px" }}>Articles</h1>
       {posts.map(({ node }) => (
         <Post
           title={node.frontmatter.title}
