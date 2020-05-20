@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import { Badge, Card } from "reactstrap"
 import Img from "gatsby-image"
 import style from "./post-list.module.less"
 import { slugify } from "../../utils/Utilities"
@@ -28,7 +27,7 @@ const Post = ({ title, author, date, body, slug, tags, fluid }) => {
               {tags.map(tag => (
                 <li>
                   <Link to={`/${slugify(tag)}`}>
-                    <Badge className={style.badge}>{tag}</Badge>
+                    <div className={style.badge}>{tag}</div>
                   </Link>
                 </li>
               ))}

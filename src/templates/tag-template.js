@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Card, CardBody } from "reactstrap"
 import Img from "gatsby-image"
 import style from "../components/post-list.module.less"
 import { slugify } from "../../utils/Utilities"
@@ -18,8 +17,8 @@ const Tags = ({ data, pageContext }) => {
       </h1>
       {posts.map(({ node }, i) => {
         return (
-          <Card className={style.card}>
-            <CardBody>
+          <div className={style.card}>
+            <div>
               <div key={node.title} className={style.post}>
                 <div className={style.cover}>
                   <Link to={node.fields.slug} key={i}>
@@ -41,8 +40,8 @@ const Tags = ({ data, pageContext }) => {
                   </div>
                 </Link>
               </div>
-            </CardBody>
-          </Card>
+            </div>
+          </div>
         )
       })}
       <Pager pageContext={pageContext} />
