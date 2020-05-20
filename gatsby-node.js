@@ -104,16 +104,16 @@ exports.createPages = async ({ actions, graphql }) => {
     // })
   })
 
-  // posts.forEach(({ node }, index) => {
-  //   createPage({
-  //     path: node.fields.slug,
-  //     component: blogTemplate,
-  //     context: {
-  //       slug: node.fields.slug,
-  //       prev: index === 0 ? null : posts[index - 1],
-  //       next: index === result.length - 1 ? null : posts[index + 1],
-  //     }, // additional data can be passed via context
-  //   })
-  // })
+  posts.forEach(({ node }, index) => {
+    createPage({
+      path: node.fields.slug,
+      component: blogTemplate,
+      context: {
+        slug: node.fields.slug,
+        prev: index === 0 ? null : posts[index - 1],
+        next: index === result.length - 1 ? null : posts[index + 1],
+      }, // additional data can be passed via context
+    })
+  })
   return
 }
