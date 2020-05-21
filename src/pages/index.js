@@ -32,7 +32,12 @@ const IndexPage = () => {
             />
           </div>
           <div className={style.content}>
-            <span>My name is Christian, you're probably here for my blog.</span>
+            <span>
+              My name is Christian, I'm a fullstack developer. I make YouTube
+              videos about various topics such as software development, Linux,
+              Neovim and Machine Learning. You can find me on the following
+              social media sites.
+            </span>
             <div className={style.list}>
               <ul>
                 <li>
