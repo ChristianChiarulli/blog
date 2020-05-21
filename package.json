@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "chrisatmachine blog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A simple blog where I keep all of my notes",
+  "version": "2.0.0",
+  "author": "Christian Chiarull <chrisatmachine@gmail.com>",
   "dependencies": {
     "gatsby": "^2.21.35",
     "gatsby-awesome-pagination": "^0.3.6",
@@ -47,9 +47,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ChristianChiarulli/blog"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ChristianChiarulli/blog/issues"
   }
 }
