@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Me from "../images/me.jpg"
 import Nvim from "../images/nvim.png"
 import ThisBlog from "../images/this-blog.png"
@@ -92,13 +92,19 @@ const IndexPage = () => {
         <div className={style.card}>
           <div className={style.post}>
             <div className={style.cover}>
-              <img src={Nvim} height="200px" width="200px" alt="nvim" />
+              <img
+                style={{ marginLeft: "90px" }}
+                src={Nvim}
+                height="200px"
+                width="200px"
+                alt="nvim"
+              />
             </div>
             <div className={style.content}>
               <span>
                 I have a pretty popular Neovim config over on Github if you're
                 interested. A lot of the process to create it has been
-                documented here.
+                documented <Link to={"/neovim"}>here</Link>.
               </span>
             </div>
           </div>
@@ -106,7 +112,7 @@ const IndexPage = () => {
         <div className={style.card}>
           <div className={style.post}>
             <div className={style.cover}>
-              <img src={ThisBlog} height="170px" width="270px" alt="nvim" />
+              <img src={ThisBlog} height="150px" width="225px" alt="nvim" />
             </div>
             <div className={style.content}>
               <span>
