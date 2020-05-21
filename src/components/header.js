@@ -70,9 +70,9 @@ const Header = () => {
             <a
               target="_blank"
               rel="nofollow noopener noreferrer"
-              href={"https://www.patreon.com/chrisatmachine"}
+              href={"https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA"}
             >
-              <FaPatreon color="#E8715C" size="30" />
+              <FaYoutube color="#EB3323" size="30" />
             </a>
           </li>
           <li>
@@ -97,9 +97,9 @@ const Header = () => {
             <a
               target="_blank"
               rel="nofollow noopener noreferrer"
-              href={"https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA"}
+              href={"https://www.patreon.com/chrisatmachine"}
             >
-              <FaYoutube color="#EB3323" size="30" />
+              <FaPatreon color="#E8715C" size="30" />
             </a>
           </li>
           {/* <li> */}
