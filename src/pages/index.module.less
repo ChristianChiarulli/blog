@@ -15,7 +15,7 @@
 
 .post {
     .flex-center();
-    .frame-small();
+    // .frame-small();
     flex-wrap: initial;
     flex-direction: row;
     width: 100%;
@@ -46,7 +46,7 @@
 }
 
 .content {
-    .frame-small();
+    // .frame-small();
     // text-align: center;
     h1, h2, p {
     // text-align: center;
@@ -57,7 +57,7 @@
         text-shadow: @text-shadow-title;
     }
     p {
-        .frame-small();
+        // .frame-small();
     }
 }
 
@@ -77,7 +77,10 @@
   background-color: #1e2127;
   box-shadow: @box-shadow-cover;
 }
-
+.list {
+    .flex-center();
+    flex-wrap: nowrap;
+    font-size: 1rem;
 ul {
     list-style: none;
     .flex-center();
@@ -102,6 +105,8 @@ ul {
         }
     }
 }
+}
+
 
 ul.postTags {
   padding: 0;

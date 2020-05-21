@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-// import PrevNext from "../components/prevnext"
+import PostPager from "../components/post-pager"
 import style from "./blog-post.module.less"
 import "katex/dist/katex.min.css"
 import "../style/themes/prism-darcula.less"
@@ -12,7 +12,7 @@ function BlogPost(props) {
     props.data.markdownRemark.frontmatter.image &&
     props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
   const { title, image, tags } = props.data.markdownRemark.frontmatter
-  // const {prev, next} = props.pageContext
+  const { prev, next } = props.pageContext
   return (
     <Layout>
       <div>
@@ -22,7 +22,9 @@ function BlogPost(props) {
             fluid={image.childImageSharp.fluid}
           />
         )}
-        <h1 style={{ backgroundColor: "#1e2127" }}>{title}</h1>
+        <h1 style={{ backgroundColor: "#1e2127", textAlign: "left" }}>
+          {title}
+        </h1>
         <div
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
           className={style.markdownBody}
@@ -37,7 +39,7 @@ function BlogPost(props) {
           ))}
         </div>
         {/* <Share title={title} url={url} pathname={props.location.pathname} /> */}
-        {/* <PrevNext prev={prev && prev.node} next={next && next.node} /> */}
+        <PostPager prev={prev && prev.node} next={next && next.node} />
       </div>
     </Layout>
   )

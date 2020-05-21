@@ -38,8 +38,6 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `)
 
-  console.log(result)
-
   const blogTemplate = path.resolve("./src/templates/blog-post.js")
   const tagsTemplate = path.resolve("./src/templates/tag-template.js")
   const posts = result.data.allMarkdownRemark.edges
@@ -65,7 +63,6 @@ exports.createPages = async ({ actions, graphql }) => {
   })
   // Eliminate duplicate tags
   allTags = _.uniq(allTags)
-  console.log(allTags)
 
   allTags.forEach(async (tag, index) => {
     const tagposts = await graphql(`
@@ -84,7 +81,6 @@ exports.createPages = async ({ actions, graphql }) => {
       }
     `)
     const tagpostsEntries = tagposts.data.allMarkdownRemark.edges
-    console.log(tag)
     paginate({
       createPage,
       items: tagpostsEntries,
