@@ -1,9 +1,10 @@
 ---
 title: Project Management with Startify
-description: 
-date: '2020-05-01'
+description:
+date: "2020-05-01"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Plug in Startify
@@ -117,5 +118,3 @@ let g:startify_custom_header = [
         \ '/_/|_/|___/_/_/_/_/ /_/  /_/\_,_/\__/_//_/ /____/ ',
         \]
 ```
-
-

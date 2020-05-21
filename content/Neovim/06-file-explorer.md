@@ -1,9 +1,10 @@
 ---
 title: Exploring coc-explorer
-description: 
-date: '2020-04-28'
+description:
+date: "2020-04-28"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Install coc-explorer
@@ -41,4 +42,3 @@ nmap <space>e :CocCommand explorer<CR>
 nmap <space>f :CocCommand explorer --preset floating<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 ```
-

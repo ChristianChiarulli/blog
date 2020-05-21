@@ -3,7 +3,7 @@ title: Installing Arch Linux (UEFI) 2020
 description: description
 date: "2020-03-30"
 image: "arch-logo.png"
-author: "chris"
+author: "Chris"
 tags: ["archlinux"]
 ---
 

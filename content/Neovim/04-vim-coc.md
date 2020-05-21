@@ -1,9 +1,10 @@
 ---
 title: Neovim Intellisense with coc
-description: 
-date: '2020-04-26'
+description:
+date: "2020-04-26"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Conquerer of Completion
@@ -48,7 +49,7 @@ source $HOME/.config/nvim/plug-config/coc.vim
 
 ## Checking coc health
 
-You can run `:checkhealth` and there should now be an entry for `coc` 
+You can run `:checkhealth` and there should now be an entry for `coc`
 
 You can use `g:coc_node_path` to point to your node executable
 
@@ -102,7 +103,7 @@ and other configuration like autoformat and adding a location for snippets (I'll
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
 
-  "snippets.ultisnips.directories": 
+  "snippets.ultisnips.directories":
   [
     "UltiSnips",
     "~/.config/nvim/utils/snips"
@@ -117,23 +118,23 @@ for more info on configuring your settings checkout [this page](https://github.c
 
 For watchman supprt install watchman
 
-- Mac 
+- Mac
 
-    ```
-    brew install watchman
-    ```
+  ```
+  brew install watchman
+  ```
 
 - Ubuntu
 
-    ```
-    sudo apt install watchman
-    ```
+  ```
+  sudo apt install watchman
+  ```
 
 - Arch
 
-    ```
-    yay -S watchman
-    ```
+  ```
+  yay -S watchman
+  ```
 
 ### Note
 

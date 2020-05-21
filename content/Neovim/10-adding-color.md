@@ -1,9 +1,10 @@
 ---
 title: Adding color with colorizer & rainbow
-description: 
-date: '2020-04-30'
+description:
+date: "2020-04-30"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Install colorizer
@@ -18,7 +19,7 @@ Create a place for lua plugins
 
 ```
 mkdir ~/.config/nvim/lua
- 
+
 touch ~/.config/nvim/lua/plug-colorizer.lua
 ```
 
@@ -27,7 +28,7 @@ Add the following:
 ```
 require'colorizer'.setup(
   {'*';},
-  { 
+  {
     RGB      = true;         -- #RGB hex codes
 	  RRGGBB   = true;         -- #RRGGBB hex codes
 	  names    = true;         -- "Name" codes like Blue
@@ -81,7 +82,6 @@ rgb(7%, 77%, 46%)
 ## Checkout the repo
 
 [colorizer](https://github.com/norcalli/nvim-colorizer.lua)
-
 
 ## Install Rainbow
 

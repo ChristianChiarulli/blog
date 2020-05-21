@@ -1,9 +1,10 @@
 ---
 title: Vim-commentary
-description: 
-date: '2020-04-30'
+description:
+date: "2020-04-30"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Install commentary

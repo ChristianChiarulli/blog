@@ -1,9 +1,10 @@
 ---
 title: Sneak
-description: 
-date: '2020-05-03'
+description:
+date: "2020-05-03"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Install
@@ -11,7 +12,6 @@ tags: ['neovim']
 ```
 Plug 'justinmk/vim-sneak'
 ```
-
 
 ## Create config file
 
@@ -74,5 +74,3 @@ T{char}
 ## Link to Sneak repo
 
 [Sneak](https://github.com/justinmk/vim-sneak)
-
-

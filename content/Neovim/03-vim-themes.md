@@ -1,9 +1,10 @@
 ---
 title: Neovim Themes
-description: 
-date: '2020-04-25'
+description:
+date: "2020-04-25"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Plugin your theme
@@ -22,7 +23,7 @@ Make sure to run `:PlugInstall`
 
 ## Theme config
 
-First create a directory for themes and then add the name of the theme you want to install 
+First create a directory for themes and then add the name of the theme you want to install
 
 ```
 mkdir ~/.config/nvim/themes

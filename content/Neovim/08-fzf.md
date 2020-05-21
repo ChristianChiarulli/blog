@@ -1,9 +1,10 @@
 ---
 title: Integrate Neovim with FZF & more
-description: 
-date: '2020-04-30'
+description:
+date: "2020-04-30"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Install FZF, Ripgrep, Universal-ctags, Silver-searcher
@@ -12,49 +13,48 @@ First let's just install a bunch of awesome tools to help you search/find stuff
 
 - Mac
 
-    ```
-    brew install fzf
+  ```
+  brew install fzf
 
-    # To install useful key bindings and fuzzy completion:
-    $(brew --prefix)/opt/fzf/install
+  # To install useful key bindings and fuzzy completion:
+  $(brew --prefix)/opt/fzf/install
 
-    brew install ripgrep
+  brew install ripgrep
 
-    brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+  brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 
-    brew install the_silver_searcher
+  brew install the_silver_searcher
 
-    brew install fd
-    ```
+  brew install fd
+  ```
 
 - Ubuntu (I think there's snaps for this stuff too)
 
-    ```
-    sudo apt install fzf
+  ```
+  sudo apt install fzf
 
-    sudo apt install ripgrep
+  sudo apt install ripgrep
 
-    sudo apt install universal-ctags
+  sudo apt install universal-ctags
 
-    sudo apt install silversearcher-ag
+  sudo apt install silversearcher-ag
 
-    sudo apt install fd-find
-    ```
+  sudo apt install fd-find
+  ```
 
-- Arch 
+- Arch
 
-    ```
-    sudo pacman -S fzf
+  ```
+  sudo pacman -S fzf
 
-    sudo pacman -S ripgrep
+  sudo pacman -S ripgrep
 
-    yay -S universal-ctags-git
+  yay -S universal-ctags-git
 
-    sudo pacman -S the_silver_searcher
+  sudo pacman -S the_silver_searcher
 
-    pacman -S fd
-    ```
-
+  pacman -S fd
+  ```
 
 ## Plug FZF & vim-rooter into vim
 

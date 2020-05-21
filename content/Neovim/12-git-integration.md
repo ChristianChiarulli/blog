@@ -1,9 +1,10 @@
 ---
 title: Git integration
-description: 
-date: '2020-05-02'
+description:
+date: "2020-05-02"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Plugins
@@ -51,7 +52,6 @@ SIGNS                                                            *signify-signs*
 See |g:signify_sign_add| on how to use different signs.
 ```
 
-
 You can also stage and unstage hunks
 
 Here's some config for changing the buffer signs
@@ -94,7 +94,7 @@ There are more commands but I prefer the options fugitive and gv provide
 
 ## Fugitive / Rhubarb
 
-This plugin is what we'll use for interacting with git 
+This plugin is what we'll use for interacting with git
 
 **Note** GBrowse only works when Rhubarb is installed
 
@@ -103,7 +103,7 @@ This plugin is what we'll use for interacting with git
 ### Commands
 
 ```
-:Git add 
+:Git add
 
 :Git commit
 
@@ -121,11 +121,10 @@ Gdiffsplit
 
 GRemove
 
-GBrowse 
+GBrowse
 ```
 
 ## GV
-
 
 ### Commands
 

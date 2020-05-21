@@ -3,7 +3,8 @@ title: Installing NVM for Node.js
 description: description
 date: "2019-03-17"
 image: "nvm.jpg"
-tags: ['nodejs']
+author: "Chris"
+tags: ["nodejs"]
 ---
 
 ## Step 1: Download nvm

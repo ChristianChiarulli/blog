@@ -1,9 +1,10 @@
 ---
 title: Airline
-description: 
-date: '2020-04-27'
+description:
+date: "2020-04-27"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Plugin Airline and Airline themes
@@ -41,14 +42,14 @@ let g:airline_right_sep = ''
 " Switch to your current theme
 let g:airline_theme = 'onedark'
 
-" Always show tabs 
+" Always show tabs
 set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
 ```
 
-Don't forget to source this file 
+Don't forget to source this file
 
 ```
 source $HOME/.config/nvim/themes/airline.vim

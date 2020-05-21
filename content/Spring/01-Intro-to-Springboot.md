@@ -3,10 +3,11 @@ title: Intro to Spring Boot
 description: description
 date: "2019-04-12"
 image: "Spring-Boot.png"
-tags: ['spring']
+author: "Chris"
+tags: ["spring"]
 ---
 
-Code can be found [here](https://github.com/ChristianChiarulli/SpringBootIntro) 
+Code can be found [here](https://github.com/ChristianChiarulli/SpringBootIntro)
 
 This is a spring boot application which provides REST endpoints to perform CRUD operations on topics and related courses
 
@@ -40,19 +41,19 @@ Here are a few example calls you can make:
 
 ### Topic CRUD operations
 
-* get all
+- get all
 
 ```
 http://localhost:8080/topics
 ```
 
-* get particular topic
+- get particular topic
 
 ```
 http://localhost:8080/topics/{topicId}
 ```
 
-* post topic 
+- post topic
 
 ```
 http://localhost:8080/topics
@@ -62,12 +63,13 @@ body:
 
 ```json
 {
-	"id": "java",
-	"name": "Java",
-	"description": "Java description"
+  "id": "java",
+  "name": "Java",
+  "description": "Java description"
 }
 ```
-* put topic
+
+- put topic
 
 ```
 http://localhost:8080/topics/{topicId}
@@ -75,7 +77,7 @@ http://localhost:8080/topics/{topicId}
 
 make sure you pass an updated body
 
-* delete topic
+- delete topic
 
 ```
 http://localhost:8080/topics/{topicId}
@@ -83,19 +85,19 @@ http://localhost:8080/topics/{topicId}
 
 ### Course CRUD operations
 
-* get all
+- get all
 
 ```
 http://localhost:8080/topics/{topicId}/courses
 ```
 
-* get particular topic
+- get particular topic
 
 ```
 http://localhost:8080/topics/{topicId}/courses/{id}
 ```
 
-* post topic 
+- post topic
 
 ```
 http://localhost:8080/topics/{topicId}/courses
@@ -105,13 +107,13 @@ body:
 
 ```json
 {
-	"id": "java-spring",
-	"name": "Java Spring",
-	"description": "Java Spring description"
+  "id": "java-spring",
+  "name": "Java Spring",
+  "description": "Java Spring description"
 }
 ```
 
-* put topic
+- put topic
 
 ```
 http://localhost:8080/topics/{topicId}/courses/{id}
@@ -119,7 +121,7 @@ http://localhost:8080/topics/{topicId}/courses/{id}
 
 make sure you pass an updated body
 
-* delete topic
+- delete topic
 
 ```
 http://localhost:8080/topics/{topicId}/courses/{id}
@@ -130,4 +132,3 @@ http://localhost:8080/topics/{topicId}/courses/{id}
 ```
 http://localhost:9001/actuator/health
 ```
-

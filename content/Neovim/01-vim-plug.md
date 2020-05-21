@@ -1,33 +1,33 @@
 ---
 title: Plugins with Vim-Plug
-description: 
-date: '2020-04-23'
+description:
+date: "2020-04-23"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
-
 
 ## Installing Neovim
 
 - On Mac
 
-    ```
-    brew install neovim
-    ```
+  ```
+  brew install neovim
+  ```
 
 - Ubuntu
 
-    ```
-    sudo apt install neovim
-    ```
+  ```
+  sudo apt install neovim
+  ```
 
 - Arch
 
-    ```
-    sudo pacman -S neovim
-    ```
+  ```
+  sudo pacman -S neovim
+  ```
 
-## Create config 
+## Create config
 
 Make directory for your Neovim config
 
@@ -35,7 +35,7 @@ Make directory for your Neovim config
 mkdir ~/.config/nvim
 ```
 
-Create an  `init.vim` file
+Create an `init.vim` file
 
 ```
 touch ~/.config/nvim/init.vim
@@ -78,7 +78,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Auto pairs for '(' '[' '{' 
+    " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
 
 call plug#end()

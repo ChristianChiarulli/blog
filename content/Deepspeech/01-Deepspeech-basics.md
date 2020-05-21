@@ -3,7 +3,8 @@ title: Deepspeech basics
 description: description
 date: "2020-04-10"
 image: "mozilla-deepspeech.png"
-tags: ['deepspeech']
+author: "Chris"
+tags: ["deepspeech"]
 ---
 
 ## What is Deepspeech
@@ -70,7 +71,7 @@ For deepspeech to run inference correctly you will need to record your voice wit
 - Channel: 1
 - Bit rate: 256 kb/s
 
-We can achieve this using the `sox` package 
+We can achieve this using the `sox` package
 
 If you're on Ubuntu:
 
@@ -104,7 +105,7 @@ To make sure you have recorded the audio in the proper format we can install ano
 mediainfo my_recording.wav
 ```
 
-You should see an output similar to the following: 
+You should see an output similar to the following:
 
 ```
 General
@@ -128,9 +129,9 @@ Bit depth                                : 16 bits
 Stream size                              : 64.0 KiB (100%)
 ```
 
-## Run inference 
+## Run inference
 
-Now we can run inference on our own voice data 
+Now we can run inference on our own voice data
 
 ```
 deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --audio my_recording.wav

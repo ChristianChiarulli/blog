@@ -3,12 +3,13 @@ title: Deepspeech using a GPU
 description: blog post
 date: "2020-04-13"
 image: "mozilla-deepspeech.png"
+author: "Chris"
 tags: [deepspeech]
 ---
 
 ## Virtual environment
 
-We will need to create another virtual environment for deepspeech-gpu 
+We will need to create another virtual environment for deepspeech-gpu
 
 ```
 conda create -n ds-gpu python=3.8
@@ -28,7 +29,6 @@ If you've been following along you can use the same model and audio files from t
 
 If not you can install them like so:
 
-
 ```
 curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz
 
@@ -39,7 +39,7 @@ curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.
 tar xvf audio-0.6.1.tar.gz
 ```
 
-## Installing CUDA and cuDNN 
+## Installing CUDA and cuDNN
 
 This goes without saying but make sure you have an Nvidia GPU and the proprietary drivers installed
 

@@ -1,9 +1,10 @@
 ---
 title: Quickscope
 description:
-date: '2020-05-03'
+date: "2020-05-03"
 image: "neovim.png"
-tags: ['neovim']
+author: "Chris"
+tags: ["neovim"]
 ---
 
 ## Install
@@ -12,7 +13,6 @@ tags: ['neovim']
 Plug 'unblevable/quick-scope'
 ```
 
-
 ## Create config file
 
 ```
@@ -20,6 +20,7 @@ touch ~/.config/nvim/plug-config/quickscope.vim
 ```
 
 Make sure to source this file in `init.vim`
+
 ```
 source $HOME/.config/nvim/plug-config/quickscope.vim
 ```
@@ -29,7 +30,6 @@ source $HOME/.config/nvim/plug-config/quickscope.vim
 Form the github repo:
 
 "An always-on highlight for a unique character in every word on a line to help you use f, F and family."
-
 
 ### Configure Quickscope
 
@@ -57,5 +57,3 @@ T{char}
 ## Link to Quickscope repo
 
 [Quickscope](https://github.com/unblevable/quick-scope)
-
-

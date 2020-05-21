@@ -3,6 +3,7 @@ title: Creating users
 description: description
 date: "2020-04-04"
 image: "arch-logo.png"
+author: "Chris"
 tags: ["linux"]
 ---
 
