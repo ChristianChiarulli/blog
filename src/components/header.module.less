@@ -14,7 +14,6 @@
     border-bottom: @header-border;
     background-color: @header-theme;
     color: @header-text;
-    // background-image: @texture;
     font-family: "CustomBoldFont", sans-serif;
     font-size: @font-size;
     & + div {
@@ -41,7 +40,6 @@
         padding: @padding-zero @padding-small;
         color: inherit;
         transition: @transition-time color;
-        // text-transform: uppercase;
     }
     p {
         margin: @margin-zero;
@@ -62,7 +60,6 @@
         .flex-center();
         flex-wrap: nowrap;
         height: 8vh;
-        font-size: 1.5em;
         // height: 100%;
         // display: block;
         // height: 1000px;
@@ -70,6 +67,7 @@
         margin: @margin-zero @margin-medium;
         padding: @padding-zero;
         @media @mobile {
+            font-size: 1.5em;
             margin-top: @margin-small;
             margin-bottom: @margin-small;
         }
@@ -112,7 +110,6 @@
 
 .expandedMenu {
     @media @mobile {
-        // background-color: #456;
         opacity: .8;
         transition: @transition-time max-height ease,
                     @transition-time opacity ease;

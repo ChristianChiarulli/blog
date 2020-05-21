@@ -1,10 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import Me from "../images/me2.jpg"
+import Me from "../images/me.jpg"
 import Nvim from "../images/nvim.png"
 import style from "./index.module.less"
 import {
@@ -16,9 +14,10 @@ import {
   FaPatreon,
 } from "react-icons/fa"
 
-const IndexPage = props => {
+const IndexPage = () => {
   return (
     <Layout>
+      <SEO title="Home" keywords={["chris@machine"]} />
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>

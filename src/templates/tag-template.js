@@ -1,10 +1,7 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
-import style from "../components/post-list.module.less"
-import { slugify } from "../../utils/Utilities"
 import Pager from "../components/pager"
 import Post from "../components/post"
 

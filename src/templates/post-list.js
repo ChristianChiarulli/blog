@@ -26,8 +26,6 @@ const postList = ({ data, pageContext }) => {
   )
 }
 
-// <Link to={props.pageContext.previousPagePath}>Previous</Link>
-// <Link to={props.pageContext.nextPagePath}>Next</Link>
 export const PostListQuery = graphql`
   query PostListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(

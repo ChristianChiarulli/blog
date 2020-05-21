@@ -2,15 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-// import PrevNext from '../components/prevnext'
-// import MetaTags from '../components/Metatags'
-// import Share from '../components/share'
+// import PrevNext from "../components/prevnext"
 import style from "./blog-post.module.less"
-// import 'katex/dist/katex.min.css'
+import "katex/dist/katex.min.css"
 import "../style/themes/prism-darcula.less"
 
 function BlogPost(props) {
-  // const url = props.data.site.siteMetadata.siteUrl
   const thumbnail =
     props.data.markdownRemark.frontmatter.image &&
     props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
