@@ -12,7 +12,7 @@ const Pager = ({ pageContext }) => {
           style={{ float: "left", paddingBottom: "100px", paddingTop: "30px" }}
           to={previousPagePath}
         >
-          <FaArrowLeft /> Previous{" "}
+          <FaArrowLeft /> Prev{" "}
         </Link>
       )}
 
