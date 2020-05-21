@@ -92,13 +92,7 @@ const IndexPage = () => {
         <div className={style.card}>
           <div className={style.post}>
             <div className={style.cover}>
-              <img
-                style={{ marginLeft: "90px" }}
-                src={Nvim}
-                height="200px"
-                width="200px"
-                alt="nvim"
-              />
+              <img src={Nvim} height="200px" width="200px" alt="nvim" />
             </div>
             <div className={style.content}>
               <span>
