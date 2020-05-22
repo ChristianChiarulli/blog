@@ -3,6 +3,7 @@ title: What to do after installing Arch Linux
 description: description
 date: "2020-05-13"
 image: "arch-logo.png"
+author: "Chris"
 tags: ["archlinux"]
 ---
 

@@ -3,7 +3,7 @@ title: How to install Miniconda
 description: description
 date: "2019-06-25"
 image: "miniconda.jpg"
-author: "chris"
+author: "Chris"
 tags: ["miniconda"]
 ---
 

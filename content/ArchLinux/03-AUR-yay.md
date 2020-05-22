@@ -3,6 +3,7 @@ title: Install packages from AUR with yay
 description: description
 date: "2020-05-14"
 image: "arch-logo.png"
+author: "Chris"
 tags: ["archlinux"]
 ---
 

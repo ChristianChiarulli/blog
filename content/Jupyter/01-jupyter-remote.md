@@ -3,7 +3,7 @@ title: Setting up a Remote Jupyter Lab Server
 description: description
 date: "2019-06-25"
 image: "jupyter.png"
-author: "chris"
+author: "Chris"
 tags: ["jupyter"]
 ---
 

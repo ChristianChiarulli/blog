@@ -3,6 +3,7 @@ title: Which Key
 description:
 date: "2020-05-03"
 image: "neovim.png"
+author: "Chris"
 tags: ["neovim"]
 ---
 

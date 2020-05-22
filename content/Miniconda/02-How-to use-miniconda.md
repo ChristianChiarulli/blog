@@ -3,7 +3,7 @@ title: Managing Environments with Miniconda
 description: description
 date: "2019-06-28"
 image: miniconda.jpg
-author: "chris"
+author: "Chris"
 tags: ["miniconda"]
 ---
 

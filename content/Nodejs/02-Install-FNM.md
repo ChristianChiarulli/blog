@@ -3,6 +3,7 @@ title: Installing Fast Node Manager (fnm)
 description: description
 date: "2020-05-12"
 image: "fnm.png"
+author: "Chris"
 tags: ["nodejs"]
 ---
 
@@ -51,6 +52,8 @@ fnm use 13.14.0
 ```
 
 ## Check currently active version
+
+(note currently not working)
 
 ```sh
 fnm current
