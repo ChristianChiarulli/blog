@@ -23,13 +23,19 @@ const IndexPage = () => {
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>
-            <img
-              src={Me}
-              height="200px"
-              width="200px"
-              style={{ borderRadius: "50%" }}
-              alt="Me"
-            />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://www.linkedin.com/in/christianchiarulli/"}
+            >
+              <img
+                src={Me}
+                height="200px"
+                width="200px"
+                style={{ borderRadius: "50%" }}
+                alt="Me"
+              />
+            </a>
           </div>
           <div className={style.content}>
             <span>
