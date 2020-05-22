@@ -33,8 +33,8 @@ const IndexPage = () => {
           </div>
           <div className={style.content}>
             <span>
-              My name is Christian, I'm a fullstack developer. I make YouTube
-              videos about various topics such as software development, Linux,
+              My name is Christian, I'm a Full Stack developer. I make YouTube
+              videos about various topics such as Software Development, Linux,
               Neovim and Machine Learning. You can find me on the following
               social media sites.
             </span>
@@ -95,7 +95,13 @@ const IndexPage = () => {
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>
-            <img src={Nvim} height="200px" width="200px" alt="nvim" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://github.com/ChristianChiarulli/nvim"}
+            >
+              <img src={Nvim} height="200px" width="200px" alt="nvim" />
+            </a>
           </div>
           <div className={style.content}>
             <span>
@@ -109,7 +115,13 @@ const IndexPage = () => {
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>
-            <img src={ThisBlog} height="150px" width="225px" alt="nvim" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://github.com/ChristianChiarulli/blog"}
+            >
+              <img src={ThisBlog} height="150px" width="225px" alt="blog" />
+            </a>
           </div>
           <div className={style.content}>
             <span>Is available on my github you can fork it if you want.</span>
