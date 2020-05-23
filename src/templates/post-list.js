@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Post from "../components/post"
 import Pager from "../components/pager"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 const postList = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
