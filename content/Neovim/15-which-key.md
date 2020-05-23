@@ -98,6 +98,9 @@ let g:which_key_map.s = {
       \ 'y' : [':Filetypes'    , 'file types'],
       \ 'z' : [':FZF'          , 'FZF'],
       \ }
+
+" Register which key map
+call which_key#register('<Space>', "g:which_key_map")
 ```
 
 ### WhichKey Commands

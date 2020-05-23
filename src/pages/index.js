@@ -5,6 +5,7 @@ import { graphql, Link } from "gatsby"
 import Me from "../images/me.jpg"
 import Nvim from "../images/nvim.png"
 import ThisBlog from "../images/this-blog.png"
+import Gatr from "../images/gatr.png"
 import style from "./index.module.less"
 import {
   FaGithub,
@@ -23,18 +24,24 @@ const IndexPage = () => {
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>
-            <img
-              src={Me}
-              height="200px"
-              width="200px"
-              style={{ borderRadius: "50%" }}
-              alt="Me"
-            />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://www.linkedin.com/in/christianchiarulli/"}
+            >
+              <img
+                src={Me}
+                height="200px"
+                width="200px"
+                style={{ borderRadius: "50%" }}
+                alt="Me"
+              />
+            </a>
           </div>
           <div className={style.content}>
             <span>
-              My name is Christian, I'm a fullstack developer. I make YouTube
-              videos about various topics such as software development, Linux,
+              My name is Christian, I'm a Full Stack developer. I make YouTube
+              videos about various topics such as Software Development, Linux,
               Neovim and Machine Learning. You can find me on the following
               social media sites.
             </span>
@@ -95,7 +102,13 @@ const IndexPage = () => {
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>
-            <img src={Nvim} height="200px" width="200px" alt="nvim" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://github.com/ChristianChiarulli/nvim"}
+            >
+              <img src={Nvim} height="200px" width="200px" alt="nvim" />
+            </a>
           </div>
           <div className={style.content}>
             <span>
@@ -109,10 +122,37 @@ const IndexPage = () => {
       <div className={style.card}>
         <div className={style.post}>
           <div className={style.cover}>
-            <img src={ThisBlog} height="150px" width="225px" alt="nvim" />
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://github.com/ChristianChiarulli/blog"}
+            >
+              <img src={ThisBlog} height="150px" width="225px" alt="blog" />
+            </a>
           </div>
           <div className={style.content}>
             <span>Is available on my github you can fork it if you want.</span>
+          </div>
+        </div>
+      </div>
+      <div className={style.card}>
+        <div className={style.post}>
+          <div className={style.cover}>
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={
+                "https://spacenews.com/lockheed-martin-offering-new-satellite-image-analysis-service/"
+              }
+            >
+              <img src={Gatr} height="150px" width="300px" alt="blog" />
+            </a>
+          </div>
+          <div className={style.content}>
+            <span>
+              During my time at Lockheed Martin I worked with some awesome
+              engineers and was the software lead for a project called G.A.T.R.
+            </span>
           </div>
         </div>
       </div>
