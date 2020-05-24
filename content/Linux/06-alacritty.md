@@ -42,9 +42,19 @@ From the repo:
 
 ## Configure
 
-```
-touch ~/.config/alacritty/alacritty.yml
-```
+Add a config file since Alacritty doesn't create one for you
+
+- On Linux and Mac
+
+  ```
+  ~/.config/alacritty/alacritty.yml
+  ```
+
+- On Windows
+
+  ```
+  %APPDATA%\alacritty\alacritty.yml
+  ```
 
 ### Example Config
 
