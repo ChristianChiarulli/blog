@@ -160,4 +160,4 @@ watch -n -1 nvidia-smi
 
 [Repo](https://github.com/alacritty/alacritty)
 
-[Color Schemes](https://github.com/alacritty/alacritt)
+[Color Schemes](https://github.com/alacritty/alacritty/wiki/Color-schemes)
