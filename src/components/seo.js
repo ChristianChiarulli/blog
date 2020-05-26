@@ -61,7 +61,14 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <html lang="en" />
+      <title>{site.siteMetadata.title}</title>
+      <meta
+        name="google-site-verification"
+        content="8XINwkJ1ddUZTNLbqRwI0wqBIg6cwpTklXzLjQ6H4Bk"
+      />
+    </Helmet>
   )
 }
 
