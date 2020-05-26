@@ -8,7 +8,7 @@ import {
   FaBars,
   FaTimes,
   FaDiscord,
-  FaPatreon
+  FaPatreon,
 } from "react-icons/fa"
 import style from "./header.module.less"
 
@@ -42,7 +42,7 @@ const Header = () => {
       <div
         className={[
           style.list,
-          isMenuCollapsed ? style.collapsedMenu : style.expandedMenu
+          isMenuCollapsed ? style.collapsedMenu : style.expandedMenu,
         ].join(" ")}
       >
         <ul>
