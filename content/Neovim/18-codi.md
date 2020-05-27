@@ -94,6 +94,8 @@ Hopefully they update it soon.
 
 [Original](https://github.com/Pablo1107/codi.vim/tree/nvim-virtual-text)
 
-[Virtual Text Fork](https://github.com/Pablo1107/codi.vim/tree/nvim-virtual-text)
+[Virtual text fork](https://github.com/Pablo1107/codi.vim/tree/nvim-virtual-text)
 
-[My Fork](https://github.com/ChristianChiarulli/codi.vim)
+[YouTube video where I found this]
+
+[My fork](https://github.com/ChristianChiarulli/codi.vim)
