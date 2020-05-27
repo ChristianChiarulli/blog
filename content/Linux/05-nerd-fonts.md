@@ -18,7 +18,7 @@ There are a number of ways to do this listed on the repo, out of those options I
 
 1. Manual install
 
-Go to the patched font directory, choose your font, download and install into `~./local/share/fonts`
+Go to the patched font directory, choose your font, download and install into `~/.local/share/fonts`
 
 2. Curl Download
 
