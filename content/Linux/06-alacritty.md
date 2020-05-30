@@ -2,7 +2,7 @@
 title: Alacritty GPU Accelerated Terminal Emulator
 date: "2020-05-23"
 image: "alacritty.png"
-author: ""
+author: "Chris"
 tags: ["linux"]
 ---
 

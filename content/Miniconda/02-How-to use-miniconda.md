@@ -11,7 +11,7 @@ The previous article explains how to properly install and configure Miniconda. T
 
 ## Creating a Virtual Environment
 
-```bash
+```
 conda create --name <myenv> python=<3.7> -y
 ```
 
@@ -23,49 +23,49 @@ This command will create a virtual environment with the following properties:
 
 ## Activating a Virtual Environment
 
-```bash
+```
 conda activate <myenv>
 ```
 
 ## Deactivating a Virtual Environment
 
-```bash
+```
 conda deactivate <myenv>
 ```
 
 ## Listing Available Environments
 
-```bash
+```
 conda env list
 ```
 
 ## Removing an Environment
 
-```bash
+```
 conda remove --name <myenv> --all
 ```
 
 ## Cloning an Environment
 
-```bash
+```
 conda create --name <myclone> --clone <myenv>
 ```
 
 ## Removing PS1 Prompt
 
-```bash
+```
 conda config --set changeps1 false
 ```
 
 To re-enable:
 
-```bash
+```
 conda config --set changeps1 true
 ```
 
 ## Searching for packages
 
-```bash
+```
 conda search <package-name>
 ```
 
@@ -73,13 +73,13 @@ conda search <package-name>
 
 - First export the environment
 
-```bash
+```
 conda env export > environment.yml
 ```
 
 - Now install in another Anaconda Environment Manager
 
-```bash
+```
 conda env create -f environment.yml
 ```
 
@@ -87,12 +87,12 @@ conda env create -f environment.yml
 
 - With conda (=)
 
-```bash
+```
 conda install <package>=<version-number>
 ```
 
 - With pip (==)
 
-```bash
+```
 pip install <package>==<version-number>
 ```

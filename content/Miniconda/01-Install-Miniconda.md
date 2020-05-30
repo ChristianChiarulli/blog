@@ -13,19 +13,19 @@ This guide will show you how to install the latest version of Miniconda. Minicon
 
 ### Linux
 
-```bash
+```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 ```
 
 ### Mac
 
-```bash
+```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
 ```
 
 ## Install Minconda
 
-```bash
+```
 sh ~/miniconda.sh -b -f -p  $HOME/.miniconda
 
 rm ~/miniconda.sh
@@ -35,7 +35,7 @@ rm ~/miniconda.sh
 
 If you don't want the conda base environment (you may not want this because as of now there are conflicts with later versions of Python and npm)
 
-```bash
+```
 conda config --set auto_activate_base false
 ```
 
@@ -43,7 +43,7 @@ The first time you run it, it'll create a ./condarc in your home directory with 
 
 Now you can initialize your shell with the following command:
 
-```bash
+```
 conda init $SHELL
 ```
 
