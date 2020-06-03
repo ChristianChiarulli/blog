@@ -15,13 +15,13 @@ The project comes with a wrapper for Maven `mvnw`
 
 to create the `jar` simply run the following:
 
-```sh
+```
 ./mvnw clean package
 ```
 
 To start the application run the following:
 
-```sh
+```
 java -jar target/filename.jar
 ```
 
