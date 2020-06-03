@@ -61,7 +61,7 @@ http://localhost:8080/topics
 
 body:
 
-```json
+```
 {
   "id": "java",
   "name": "Java",
@@ -105,7 +105,7 @@ http://localhost:8080/topics/{topicId}/courses
 
 body:
 
-```json
+```
 {
   "id": "java-spring",
   "name": "Java Spring",
