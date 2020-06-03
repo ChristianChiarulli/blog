@@ -11,19 +11,19 @@ tags: ["nodejs"]
 
 If you're on linux you may first need `curl`
 
-```sh
+```
 sudo apt install curl
 ```
 
 The following command will automatically install nvm using `curl`
 
-```sh
+```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 ```
 
 ## Step 2: Verify installation
 
-```sh
+```
 nvm --version
 ```
 
@@ -31,13 +31,13 @@ nvm --version
 
 First we install it by running the following
 
-```sh
+```
 nvm install --lts
 ```
 
 Next we can activate it
 
-```sh
+```
 nvm use --lts
 ```
 
@@ -45,13 +45,13 @@ nvm use --lts
 
 First we install it by running the following
 
-```sh
+```
 nvm install node
 ```
 
 Next we can activate it
 
-```sh
+```
 nvm use node
 ```
 
@@ -63,7 +63,7 @@ The third line will give you autocomplete with nvm which is nice
 
 I recommend adding it to your `.bash_profile` because that is typically where I add all of my exports
 
-```sh
+```
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
