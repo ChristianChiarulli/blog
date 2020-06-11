@@ -5,7 +5,6 @@ import { graphql } from "gatsby"
 import PostPager from "../components/post-pager"
 import style from "./blog-post.module.less"
 import "katex/dist/katex.min.css"
-import "../style/themes/prism-darcula.less"
 
 function BlogPost(props) {
   const thumbnail =
