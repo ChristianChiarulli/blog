@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaYoutube,
-  FaRss,
   FaBars,
   FaTimes,
   FaDiscord,
@@ -102,11 +101,6 @@ const Header = () => {
               <FaPatreon color="#E8715C" size="30" />
             </a>
           </li>
-          {/* <li> */}
-          {/*   <Link to={"/rss.xml"}> */}
-          {/*     <FaRss size="30" /> */}
-          {/*   </Link> */}
-          {/* </li> */}
         </ul>
       </div>
     </div>

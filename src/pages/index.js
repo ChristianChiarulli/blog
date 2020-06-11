@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import Me from "../images/me.jpg"
 import Nvim from "../images/nvim.png"
 import ThisBlog from "../images/this-blog.png"
@@ -11,7 +11,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaYoutube,
-  FaRss,
   FaDiscord,
   FaPatreon,
 } from "react-icons/fa"

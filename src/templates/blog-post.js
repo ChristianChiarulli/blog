@@ -7,9 +7,6 @@ import style from "./blog-post.module.less"
 import "katex/dist/katex.min.css"
 
 function BlogPost(props) {
-  const thumbnail =
-    props.data.markdownRemark.frontmatter.image &&
-    props.data.markdownRemark.frontmatter.image.childImageSharp.resize.src
   const { title, image, tags } = props.data.markdownRemark.frontmatter
   const { prev, next } = props.pageContext
   return (
