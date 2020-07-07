@@ -5,6 +5,14 @@ module.exports = {
     author: `Chris`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-verify-brave",
+      options: {
+        token:
+          "8ad58b5ea5f143eb909c990d56012938371dcbccc434f51d71d62bd3df452e8e",
+        domain: "chrisatmachine.com",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

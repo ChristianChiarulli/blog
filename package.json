@@ -13,6 +13,7 @@
     "gatsby-plugin-offline": "^3.2.6",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sharp": "^2.6.3",
+    "gatsby-plugin-verify-brave": "^1.0.5",
     "gatsby-remark-codefence": "0.0.4",
     "gatsby-remark-embed-youtube": "0.0.7",
     "gatsby-remark-katex": "^3.3.2",
