@@ -98,7 +98,7 @@ const IndexPage = () => {
                   <a
                     target="_blank"
                     rel="nofollow noopener noreferrer"
-                    href={"https://www.chrisatmachine.com/xml.rss"}
+                    href={"https://www.chrisatmachine.com/rss.xml"}
                   >
                     <FaRss color="#E89D4B" size="30" />
                   </a>
