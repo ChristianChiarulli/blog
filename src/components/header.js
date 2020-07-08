@@ -8,6 +8,7 @@ import {
   FaTimes,
   FaDiscord,
   FaPatreon,
+  FaRss,
 } from "react-icons/fa"
 import style from "./header.module.less"
 
@@ -99,6 +100,15 @@ const Header = () => {
               href={"https://www.patreon.com/chrisatmachine"}
             >
               <FaPatreon color="#E8715C" size="30" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://www.chrisatmachine.com/xml.rss"}
+            >
+              <FaRss color="#E89D4B" size="30" />
             </a>
           </li>
         </ul>

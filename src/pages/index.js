@@ -93,6 +93,15 @@ const IndexPage = () => {
                     <FaPatreon color="#E8715C" size="30" />
                   </a>
                 </li>
+                <li>
+                  <a
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    href={"https://www.chrisatmachine.com/xml.rss"}
+                  >
+                    <FaRss color="#E89D4B" size="30" />
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
