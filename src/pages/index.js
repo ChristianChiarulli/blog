@@ -13,6 +13,7 @@ import {
   FaYoutube,
   FaDiscord,
   FaPatreon,
+  FaRss,
 } from "react-icons/fa"
 
 const IndexPage = () => {
