@@ -1,6 +1,6 @@
 ---
 title: Installing DWM
-date: "2020-05-23"
+date: "2020-07-11"
 image: "dwm.png"
 author: "Chris"
 tags: ["linux", "dwm"]
