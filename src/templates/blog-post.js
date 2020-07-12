@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import PostPager from "../components/post-pager"
 import style from "./blog-post.module.less"
 import "katex/dist/katex.min.css"
-import "../style/dark-theme.less"
+import "../style/prism-darcula.less"
 
 function BlogPost(props) {
   const { title, image, tags } = props.data.markdownRemark.frontmatter
