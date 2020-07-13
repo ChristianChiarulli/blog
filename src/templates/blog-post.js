@@ -67,7 +67,7 @@ function BlogPost(props) {
         {/* <Share title={title} url={url} pathname={props.location.pathname} /> */}
         <PostPager prev={prev && prev.node} next={next && next.node} />
       </div>
-      <div style={{ marginTop: "6em", marginBottom: "6em" }}>{comments()}</div>
+      <div style={{ marginTop: "6em", paddingBottom: "6em" }}>{comments()}</div>
     </Layout>
   )
 }
