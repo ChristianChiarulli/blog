@@ -28,7 +28,7 @@ function BlogPost(props) {
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
             id: id,
-            distractionFreeMode: true,
+            distractionFreeMode: false,
           }}
         />
       )
