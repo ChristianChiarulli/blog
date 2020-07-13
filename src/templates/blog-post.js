@@ -27,7 +27,7 @@ function BlogPost(props) {
             repo: "blog", // The repository of store comments,
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
-            // id: title,
+            id: title,
             distractionFreeMode: false, // Facebook-like distraction free mode
           }}
         />
