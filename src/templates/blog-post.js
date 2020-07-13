@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
@@ -6,8 +6,8 @@ import PostPager from "../components/post-pager"
 import style from "./blog-post.module.less"
 import "katex/dist/katex.min.css"
 import "../style/prism-darcula.less"
-// import GitalkComponent from "gitalk/dist/gitalk-component"
 import loadable from "@loadable/component"
+import "@suziwen/gitalk/dist/gitalk.css"
 
 function BlogPost(props) {
   const { title, image, tags } = props.data.markdownRemark.frontmatter
