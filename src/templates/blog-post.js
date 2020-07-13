@@ -44,6 +44,7 @@ function BlogPost(props) {
             clientSecret: "7d0c29add206d5bc85fc78f27237b49b08e602d0",
             repo: "https://github.com/ChristianChiarulli/blog", // The repository of store comments,
             owner: "ChristianChiarulli",
+            id: title,
             distractionFreeMode: false, // Facebook-like distraction free mode
           }}
         />
