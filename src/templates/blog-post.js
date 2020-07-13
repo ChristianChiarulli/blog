@@ -66,18 +66,8 @@ function BlogPost(props) {
         </div>
         {/* <Share title={title} url={url} pathname={props.location.pathname} /> */}
         <PostPager prev={prev && prev.node} next={next && next.node} />
-        {comments()}
-        {/* <GitalkComponent */}
-        {/*   options={{ */}
-        {/*     clientID: "fbe3eb4cb8351d49fb9c", */}
-        {/*     clientSecret: "7d0c29add206d5bc85fc78f27237b49b08e602d0", */}
-        {/*     repo: "https://github.com/ChristianChiarulli/blog", // The repository of store comments, */}
-        {/*     owner: "ChristianChiarulli", */}
-        {/*     id: title, */}
-        {/*     distractionFreeMode: false, // Facebook-like distraction free mode */}
-        {/*   }} */}
-        {/* /> */}
       </div>
+      {comments()}
     </Layout>
   )
 }
