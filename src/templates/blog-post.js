@@ -6,6 +6,7 @@ import PostPager from "../components/post-pager"
 import style from "./blog-post.module.less"
 import "katex/dist/katex.min.css"
 import "../style/prism-darcula.less"
+import GitalkComponent from "gitalk/dist/gitalk-component"
 
 function BlogPost(props) {
   const { title, image, tags } = props.data.markdownRemark.frontmatter
@@ -37,6 +38,15 @@ function BlogPost(props) {
         </div>
         {/* <Share title={title} url={url} pathname={props.location.pathname} /> */}
         <PostPager prev={prev && prev.node} next={next && next.node} />
+        <GitalkComponent
+          options={{
+            clientID: "fbe3eb4cb8351d49fb9c",
+            clientSecret: "7d0c29add206d5bc85fc78f27237b49b08e602d0",
+            repo: "https://github.com/ChristianChiarulli/blog", // The repository of store comments,
+            owner: "ChristianChiarulli",
+            distractionFreeMode: false, // Facebook-like distraction free mode
+          }}
+        />
       </div>
     </Layout>
   )
@@ -66,3 +76,4 @@ export const query = graphql`
     }
   }
 `
+
