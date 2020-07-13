@@ -10,7 +10,7 @@ import loadable from "@loadable/component"
 import "@suziwen/gitalk/dist/gitalk.css"
 
 function BlogPost(props) {
-  const { title, image, tags } = props.data.markdownRemark.frontmatter
+  const { title, image, tags, id } = props.data.markdownRemark.frontmatter
   const { prev, next } = props.pageContext
 
   const comments = () => {
@@ -27,7 +27,7 @@ function BlogPost(props) {
             repo: "blog", // The repository of store comments,
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
-            id: title,
+            id: id,
             distractionFreeMode: false, // Facebook-like distraction free mode
           }}
         />
@@ -67,7 +67,7 @@ function BlogPost(props) {
         {/* <Share title={title} url={url} pathname={props.location.pathname} /> */}
         <PostPager prev={prev && prev.node} next={next && next.node} />
       </div>
-      {comments()}
+      <div>{comments()}</div>
     </Layout>
   )
 }
@@ -77,6 +77,7 @@ export default BlogPost
 export const query = graphql`
   query PostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
       html
       excerpt
       frontmatter {
