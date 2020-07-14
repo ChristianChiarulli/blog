@@ -12,7 +12,7 @@ import "@suziwen/gitalk/dist/gitalk.css"
 function BlogPost(props) {
   const { title, image, tags } = props.data.markdownRemark.frontmatter
   const { prev, next } = props.pageContext
-  const { id } = props.data.markdownRemark.id
+  const { id } = props.data.markdownRemark
 
   const comments = () => {
     if (typeof window !== "undefined") {
