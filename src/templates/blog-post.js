@@ -25,10 +25,10 @@ function BlogPost(props) {
           options={{
             clientID: "eb052db6cda13a2e6489",
             clientSecret: "a523cda8c6cce8bfd68044335f54fe2d6cc84d77",
-            repo: "blog",
+            repo: "blog_comments",
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
-            id: id,
+            id: title,
             distractionFreeMode: false,
           }}
         />
