@@ -28,7 +28,7 @@ function BlogPost(props) {
             repo: "blog_comments",
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
-            id: title,
+            id: id,
             distractionFreeMode: false,
           }}
         />
