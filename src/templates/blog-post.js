@@ -23,8 +23,8 @@ function BlogPost(props) {
       return (
         <GitalkComponent
           options={{
-            clientID: "eb052db6cda13a2e6489",
-            clientSecret: "a523cda8c6cce8bfd68044335f54fe2d6cc84d77",
+            clientID: "fbe3eb4cb8351d49fb9c",
+            clientSecret: "7d0c29add206d5bc85fc78f27237b49b08e602d0",
             repo: "blog_comments",
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
