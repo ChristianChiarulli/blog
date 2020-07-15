@@ -55,6 +55,9 @@ const Header = () => {
           <li>
             <Link to={"/tags"}>Topics</Link>
           </li>
+          <li>
+            <Link to={"/contact"}>Contact</Link>
+          </li>
         </ul>
         <ul>
           <li>
