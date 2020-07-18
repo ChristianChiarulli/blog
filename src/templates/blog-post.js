@@ -29,6 +29,7 @@ function BlogPost(props) {
             owner: "ChristianChiarulli",
             admin: ["ChristianChiarulli"],
             id: id,
+            title: title,
             distractionFreeMode: false,
           }}
         />
@@ -98,4 +99,3 @@ export const query = graphql`
     }
   }
 `
-
