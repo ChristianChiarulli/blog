@@ -16,6 +16,14 @@ npm i -g gatsby-cli
 git clone git@github.com:ChristianChiarulli/blog.git
 ```
 
+## Install dependencies
+
+```
+cd blog
+
+npm i
+```
+
 ## Start development server
 
 ```
@@ -31,4 +39,3 @@ I use AWS Amplify to host the blog
 ## Content
 
 All of the markdown files for the blog can be found in the `content/` folder
-
