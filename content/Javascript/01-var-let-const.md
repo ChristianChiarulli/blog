@@ -1,6 +1,6 @@
 ---
 title: var, let, const
-date: "2020-07-19"
+date: "2020-04-19"
 image: "javascript.jpg"
 author: "Chris"
 tags: ["javascript"]

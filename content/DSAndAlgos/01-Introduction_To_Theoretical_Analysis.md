@@ -2,7 +2,7 @@
 title: Introduction to Theoretical Analysis
 date: "2020-07-19"
 image: "ds-algo-blog.png"
-author: "Chris"
+author: "Jason"
 tags: ["ds-algo"]
 ---
 
