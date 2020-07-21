@@ -670,9 +670,13 @@ text-align: left;
 }
 
 .markdownBody table {
-  display: block;
-  overflow: auto;
+  // display: block;
+  // overflow: auto;
   width: 100%;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .markdownBody table th {
@@ -681,17 +685,28 @@ text-align: left;
 
 .markdownBody table td,
 .markdownBody table th {
-  border: 1px solid #dfe2e5;
-  padding: 6px 13px;
+  // border: 1px solid #d19a66;
+  padding: 10px 20px;
 }
+
+.markdownBody th {
+  background-color: #20242F;
+}
+
 
 .markdownBody table tr {
-  background-color: #fff;
-  border-top: 1px solid #c6cbd1;
+  background-color: #1e2127;
+  // border: 1px solid #d19a66;
+  // border-bottom: 1px solid #d19a66;
+  // border-left:  1px solid #d19a66;
+  text-align: center;
 }
 
+
+@theme-color: #1e2127;
+@title-color: #d19a66;
 .markdownBody table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: #20242F;
 }
 
 .markdownBody img {
