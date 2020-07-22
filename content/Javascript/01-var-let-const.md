@@ -1,6 +1,6 @@
 ---
 title: var, let, const
-date: "2020-04-19"
+date: "2020-07-20"
 image: "javascript.jpg"
 author: "Chris"
 tags: ["javascript"]
@@ -66,6 +66,8 @@ console.log(var3)
 
 ## Block Scope
 
+In the following example `var1` will be accessible outside of the `if` statement which is considered a block. Both `let` and `const` will be confined to the `if` block.
+
 ```js heading="Block Scope"
 if (true) {
   var var1 = "You can access me outside the block"
@@ -82,4 +84,42 @@ if (true) {
 // console.log(var1);
 // console.log(var2);
 // console.log(var3);
+```
+
+## Redefining keywords
+
+You will be able to redefine variables declared with `var`.
+
+```js heading="Redefining variable declared with var"
+var foo = 1
+
+console.log(foo)
+
+foo = "I can also be a string"
+
+console.log(foo)
+```
+
+You will also be able to redefine variables declared with `let`.
+
+```js heading="Redefining variable declared with let"
+let bar = 1
+
+console.log(bar)
+
+bar = "I can also be a string"
+
+console.log(bar)
+```
+
+This should go without saying but you can't redefine a constant declared with `const` it will throw a type error.
+
+```js heading="Failing to redefine constant declared with const"
+const baz = 1
+
+console.log(baz)
+
+baz = "This is gonna fail"
+
+console.log(baz)
 ```
