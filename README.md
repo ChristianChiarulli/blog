@@ -13,7 +13,7 @@ npm i -g gatsby-cli
 ## Clone the repo
 
 ```
-git clone git@github.com:ChristianChiarulli/blog.git
+git clone https://github.com/ChristianChiarulli/blog.git
 ```
 
 ## Install dependencies
