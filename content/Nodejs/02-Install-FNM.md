@@ -13,13 +13,13 @@ If you already use something like `nvm` you'll notice `fnm` is significantly fas
 
 ## Install
 
-- On Mac:
+### On Mac:
 
 ```
 brew install Schniz/tap/fnm
 ```
 
-- On Linux:
+### On Linux:
 
 ```
 sudo apt install curl
@@ -31,7 +31,13 @@ The following command will automatically install fnm using `curl`
 curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin
 ```
 
-## Upgrade
+If you don't already have `.local/bin` in your path
+
+```
+export PATH=/home/$USER/.local/bin/fnm:$PATH
+```
+
+### Upgrade
 
 ```
 curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin --skip-shell
@@ -43,12 +49,6 @@ Add the following to you `.bashrc` or `.zshrc`
 
 ```
 eval "$(fnm env --multi)"
-```
-
-If you don't already have `.local/bin` in your path
-
-```
-export PATH=/home/$USER/.local/bin/fnm:$PATH
 ```
 
 ## Commands
