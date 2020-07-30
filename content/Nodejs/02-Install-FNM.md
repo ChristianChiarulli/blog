@@ -45,6 +45,12 @@ Add the following to you `.bashrc` or `.zshrc`
 eval "$(fnm env --multi)"
 ```
 
+If you don't already have `.local/bin` in your path
+
+```
+export PATH=/home/$USER/.local/bin/fnm:$PATH
+```
+
 ## Commands
 
 ### List install candidates
