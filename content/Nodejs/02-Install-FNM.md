@@ -25,7 +25,7 @@ brew install Schniz/tap/fnm
 sudo apt install curl
 ```
 
-The following command will automatically install fnm using `curl`
+The following command will automatically install `fnm` using `curl`
 
 ```
 curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin
