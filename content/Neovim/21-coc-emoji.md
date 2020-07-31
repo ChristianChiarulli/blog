@@ -1,16 +1,24 @@
 ---
-title: Discovering extensions with coc-marketplace
+title: Emojis in Neovim 💯👍😜
 date: "2020-07-31"
 image: "neovim.png"
 author: "Chris"
 tags: [neovim]
 ---
 
-## What is coc-marketplace?
+## Supporting emoji ✌
 
-This extension is a marketplace for all other coc-extensions
+Make sure your terminal supports emojis
 
-### Note
+You will also need a font that will support emojis such as:
+
+On Arch Linux you will need to:
+
+```
+sudo pacman -S noto-fonts-emoji
+```
+
+### Note 📓
 
 You will need to have CoC installed I have a blog post and video for installing CoC here:
 
@@ -18,13 +26,13 @@ You will need to have CoC installed I have a blog post and video for installing 
 
 [Blog Post](https://www.chrisatmachine.com/Neovim/04-vim-coc/)
 
-## Install
+## Install 📥
 
 ```
 :CocInstall coc-emoji
 ```
 
-## Commands
+## Commands ⌨
 
 Emojis, are enabled for markdown files only by default.
 
