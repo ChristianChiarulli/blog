@@ -16,6 +16,14 @@ FAR is a Vim/Neovim plugin that will allow you to perform project wide find & re
     Plug 'ChristianChiarulli/far.vim'
     ```
 
+( **NOTE** )
+
+- You may also need to run:
+
+    ```
+    :UpdateRemotePlugins
+    ```
+
 Currently I'm using a fork that improves the experience in my opinion, it's based on this [issue](https://github.com/brooth/far.vim/issues/94)
 
 ## Configuration
