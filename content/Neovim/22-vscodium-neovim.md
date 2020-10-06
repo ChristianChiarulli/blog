@@ -69,7 +69,7 @@ From here the path is `Contents/Resources/app/product.json`
 Here is the path to `product.json` on Linux:
 
 ```
-/usr/share/vscodium-bin/resources/app/product.json
+/usr/share/codium/resources/app/product.json
 ```
 
 ## The Neovim Extension
