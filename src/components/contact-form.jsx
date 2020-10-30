@@ -41,4 +41,3 @@ class ContactForm extends React.Component {
 }
 
 export default ContactForm
-
