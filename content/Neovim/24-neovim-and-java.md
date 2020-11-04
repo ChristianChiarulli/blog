@@ -10,7 +10,7 @@ tags: [neovim]
 
 **Available:**
 
-- Treesitter highlighting
+- [Treesitter highlighting](https://github.com/nvim-treesitter/nvim-treesitter)
 - Goto definition
 - Goto references
 - Formatting
