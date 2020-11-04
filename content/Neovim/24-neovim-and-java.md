@@ -1,9 +1,9 @@
 ---
 title: Java in Neovim
 date: "2020-11-04"
-image: "neovim.png"
+image: "Neovim_Java.png"
 author: "Chris"
-tags: [Neovim_Java.png]
+tags: [neovim]
 ---
 
 ## Current State of Java + Neovim
