@@ -38,10 +38,10 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `)
 
-  const blogTemplate = path.resolve("./src/templates/blog-post.js")
-  const tagsTemplate = path.resolve("./src/templates/tag-template.js")
+  const blogTemplate = path.resolve("./src/templates/blog-post.jsx")
+  const tagsTemplate = path.resolve("./src/templates/tag-template.jsx")
   const posts = result.data.allMarkdownRemark.edges
-  const postList = path.resolve("./src/templates/post-list.js")
+  const postList = path.resolve("./src/templates/post-list.jsx")
 
   const { paginate } = require("gatsby-awesome-pagination")
 
