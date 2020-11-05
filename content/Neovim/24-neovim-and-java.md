@@ -21,7 +21,7 @@ tags: [neovim]
 - Search text (FZF)
 - Quickfix
 - Lombok
-- Configuration in `coc-config.json`
+- Configuration in `coc-settings.json`
 
 **Difficult to Implement:**
 
@@ -42,10 +42,39 @@ You will need to have CoC installed I have a blog post and video for installing 
 
 ## Install
 
-To realize most of the value make sure to install `coc-java`
+**Treesitter**
+
+_You will need Neovim>=0.5_
+
+- Install with VimPlug
+
+```
+Plug 'nvim-treesitter/nvim-treesitter'
+```
+
+Add this to your `init.vim`
+
+```
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+  },
+}
+```
+
+**coc-java**
 
 ```
 :CocInstall coc-java
+```
+
+**Lombok**
+
+```
+sudo mkdir /usr/local/share/lombok
+
+sudo wget https://projectlombok.org/downloads/lombok.jar -O /usr/local/share/lombok/lombok.jar
 ```
 
 ## Commands
@@ -73,6 +102,19 @@ Here are a bunch of commands to get the behavior of this video:
 :CocEnable                          " enable CoC
 ```
 
+## Configuration
+
+- `coc-settings.json`
+
+```
+// codelens
+"codeLens.enable": true,
+"java.referencesCodeLens.enabled": true,
+"java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok.jar",
+// "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok.jar", // for older versions of Java
+```
+
 ## Repo Links
 
 [coc-java](https://github.com/neoclide/coc-java)
+[treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
