@@ -1,7 +1,7 @@
 ---
 title: Creating a Todolist with FastAPI
 date: "2020-11-21"
-image: "TODO"
+image: "fastapi.png"
 author: "Chris"
 tags: ["fastapi"]
 ---
