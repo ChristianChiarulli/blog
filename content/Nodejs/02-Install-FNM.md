@@ -16,7 +16,7 @@ If you already use something like `nvm` you'll notice `fnm` is significantly fas
 ### On Mac:
 
 ```
-brew install Schniz/tap/fnm
+brew install fnm
 ```
 
 ### On Linux:
@@ -28,7 +28,7 @@ sudo apt install curl
 The following command will automatically install `fnm` using `curl`
 
 ```
-curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir $HOME/.local/bin
 ```
 
 If you don't already have `.local/bin` in your path
@@ -40,7 +40,7 @@ export PATH=/home/$USER/.local/bin/fnm:$PATH
 ### Upgrade
 
 ```
-curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- --install-dir $HOME/.local/bin --skip-shell
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir $HOME/.local/bin --skip-shell
 ```
 
 ## bashrc/zshrc config
@@ -48,7 +48,7 @@ curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash -s -- 
 Add the following to you `.bashrc` or `.zshrc`
 
 ```
-eval "$(fnm env --multi)"
+eval "$(fnm env)"
 ```
 
 ## Commands
@@ -95,6 +95,25 @@ fnm use nickname
 
 ```
 fnm default 13.14.0
+```
+
+## Autocompletions
+
+You can replace `zsh` with `bash` if you are using `bash`
+
+```
+mkdir -p ~/.config/zsh/completions
+
+touch ~/.config/zsh/completions/_fnm
+
+fnm completions --shell=zsh > ~/.config/zsh/completions/_fnm
+```
+
+Then add the following to your `.zshrc`:
+
+```
+fpath+=~/.config/zsh/completions/_fnm
+compinit
 ```
 
 ## Wrapping up
