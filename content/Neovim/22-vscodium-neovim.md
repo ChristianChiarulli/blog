@@ -17,7 +17,7 @@ Microsoft’s vscode source code is open source (MIT-licensed), but the product 
 - On Mac
 
   ```
-  brew cask install vscodium
+  brew install --cask vscodium
   ```
 
 - Arch Linux
