@@ -19,7 +19,7 @@ From the repo:
 - Mac
 
   ```
-  brew cask install alacritty
+  brew install --cask alacritty
   ```
 
 - Ubuntu
