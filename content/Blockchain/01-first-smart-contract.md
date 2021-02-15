@@ -88,3 +88,7 @@ We can now deploy our smart contract. Make sure to give the `storedData` value a
 After deploying the contract you can click the dropdown arrow and interact with an instance of it on the blockchain.
 
 In future tutorials I will show you how to deploy this on a local dev environment and create a simple front end.
+
+## Links
+
+[Remix Docs](https://remix-ide.readthedocs.io/en/latest/run.html#run-setup)
