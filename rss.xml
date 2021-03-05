@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris@Machine]]></title><description><![CDATA[A blog where I keep all of my notes.]]></description><link>https://www.chrisatmachine.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 05 Mar 2021 22:48:43 GMT</lastBuildDate><item><title><![CDATA[LSP Completion Symbols in CoC]]></title><description><![CDATA[LSP Completion Symbols If you are familiar with VS Code then you have probably noticed all of the symbols you see in the completion menu…]]></description><link>https://www.chrisatmachine.com/Neovim/26-lsp-symbols/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/26-lsp-symbols/</guid><pubDate>Mon, 15 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;LSP Completion Symbols&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris@Machine]]></title><description><![CDATA[A blog where I keep all of my notes.]]></description><link>https://www.chrisatmachine.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 05 Mar 2021 23:37:20 GMT</lastBuildDate><item><title><![CDATA[LSP Completion Symbols in CoC]]></title><description><![CDATA[LSP Completion Symbols If you are familiar with VS Code then you have probably noticed all of the symbols you see in the completion menu…]]></description><link>https://www.chrisatmachine.com/Neovim/26-lsp-symbols/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/26-lsp-symbols/</guid><pubDate>Mon, 15 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;LSP Completion Symbols&lt;/h2&gt;
 &lt;p&gt;If you are familiar with VS Code then you have probably noticed all of the symbols you see in the completion menu. You can find an example of all of the symbols provided here: &lt;a href=&quot;https://code.visualstudio.com/docs/editor/intellisense&quot;&gt;VSCode Intellisense Overview&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Adding to CoC&lt;/h2&gt;
 &lt;p&gt;To add them to the CoC compeletion menu add the following to your &lt;code class=&quot;language-text&quot;&gt;coc-settings.json&lt;/code&gt;:&lt;/p&gt;
@@ -1199,7 +1199,32 @@ let g:codi#aliases = {
 &lt;p&gt;&lt;a href=&quot;https://github.com/Pablo1107/codi.vim/tree/nvim-virtual-text&quot;&gt;Original&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/Pablo1107/codi.vim/tree/nvim-virtual-text&quot;&gt;Virtual text fork&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=iGrUvcQyfhc&quot;&gt;YouTube video where I found this&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ChristianChiarulli/codi.vim&quot;&gt;My fork&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Alacritty GPU Accelerated Terminal Emulator]]></title><description><![CDATA[What is Alacritty? Alacritty bills itself as the fastest terminal emulator in existence. From the repo: "Using the GPU for rendering enables…]]></description><link>https://www.chrisatmachine.com/Linux/06-alacritty/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Linux/06-alacritty/</guid><pubDate>Sat, 23 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is Alacritty?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ChristianChiarulli/codi.vim&quot;&gt;My fork&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Installing Nerd Fonts]]></title><description><![CDATA[What are Nerd Fonts? From the repo: "Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons…]]></description><link>https://www.chrisatmachine.com/Linux/05-nerd-fonts/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Linux/05-nerd-fonts/</guid><pubDate>Sat, 23 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What are Nerd Fonts?&lt;/h2&gt;
+&lt;p&gt;From the repo:&lt;/p&gt;
+&lt;p&gt;&quot;Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular &apos;iconic fonts&apos; such as Font Awesome ➶, Devicons ➶, Octicons ➶, and others.&quot;&lt;/p&gt;
+&lt;h2&gt;Installing a font&lt;/h2&gt;
+&lt;p&gt;There are a number of ways to do this listed on the repo, out of those options I think two are really useful.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Manual install&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Go to the patched font directory, choose your font, download and install into &lt;code class=&quot;language-text&quot;&gt;~/.local/share/fonts&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Curl Download&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Another good option for writing your own script is to use the &lt;code class=&quot;language-text&quot;&gt;curl&lt;/code&gt; command to download the font like this:&lt;/p&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts &amp;&amp; curl -fLo &quot;Fira Code Regular Nerd Font Complete.otf&quot; https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.otf
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;h2&gt;ttf vs otf&lt;/h2&gt;
+&lt;p&gt;otf is a newer standard based on ttf, when given the option you should generally choose otf.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.makeuseof.com/tag/otf-vs-ttf-fonts-one-better/&quot;&gt;here&lt;/a&gt; is a good article explaining the difference.&lt;/p&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ryanoasis/nerd-fonts&quot;&gt;Nerd Font Repo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.nerdfonts.com/&quot;&gt;Nerd Font Website&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Alacritty GPU Accelerated Terminal Emulator]]></title><description><![CDATA[What is Alacritty? Alacritty bills itself as the fastest terminal emulator in existence. From the repo: "Using the GPU for rendering enables…]]></description><link>https://www.chrisatmachine.com/Linux/06-alacritty/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Linux/06-alacritty/</guid><pubDate>Sat, 23 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is Alacritty?&lt;/h2&gt;
 &lt;p&gt;Alacritty bills itself as the fastest terminal emulator in existence.&lt;/p&gt;
 &lt;p&gt;From the repo:&lt;/p&gt;
 &lt;p&gt;&quot;Using the GPU for rendering enables optimizations that simply aren&apos;t possible without it. Alacritty currently supports macOS, Linux, BSD, and Windows.&quot;&lt;/p&gt;
@@ -1367,32 +1392,7 @@ key_bindings:
   
 &lt;h2&gt;Links&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/alacritty/alacritty&quot;&gt;Repo&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/alacritty/alacritty/wiki/Color-schemes&quot;&gt;Color Schemes&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Installing Nerd Fonts]]></title><description><![CDATA[What are Nerd Fonts? From the repo: "Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons…]]></description><link>https://www.chrisatmachine.com/Linux/05-nerd-fonts/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Linux/05-nerd-fonts/</guid><pubDate>Sat, 23 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What are Nerd Fonts?&lt;/h2&gt;
-&lt;p&gt;From the repo:&lt;/p&gt;
-&lt;p&gt;&quot;Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons). Specifically to add a high number of extra glyphs from popular &apos;iconic fonts&apos; such as Font Awesome ➶, Devicons ➶, Octicons ➶, and others.&quot;&lt;/p&gt;
-&lt;h2&gt;Installing a font&lt;/h2&gt;
-&lt;p&gt;There are a number of ways to do this listed on the repo, out of those options I think two are really useful.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Manual install&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Go to the patched font directory, choose your font, download and install into &lt;code class=&quot;language-text&quot;&gt;~/.local/share/fonts&lt;/code&gt;&lt;/p&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;Curl Download&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Another good option for writing your own script is to use the &lt;code class=&quot;language-text&quot;&gt;curl&lt;/code&gt; command to download the font like this:&lt;/p&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts &amp;&amp; curl -fLo &quot;Fira Code Regular Nerd Font Complete.otf&quot; https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.otf
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;h2&gt;ttf vs otf&lt;/h2&gt;
-&lt;p&gt;otf is a newer standard based on ttf, when given the option you should generally choose otf.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.makeuseof.com/tag/otf-vs-ttf-fonts-one-better/&quot;&gt;here&lt;/a&gt; is a good article explaining the difference.&lt;/p&gt;
-&lt;h2&gt;Links&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ryanoasis/nerd-fonts&quot;&gt;Nerd Font Repo&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.nerdfonts.com/&quot;&gt;Nerd Font Website&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Snippets with CoC]]></title><description><![CDATA[Install Make sure you install CoC, I have a video for that here After setting up CoC you can install with: Config You can create a config…]]></description><link>https://www.chrisatmachine.com/Neovim/17-snippets/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/17-snippets/</guid><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/alacritty/alacritty/wiki/Color-schemes&quot;&gt;Color Schemes&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Snippets with CoC]]></title><description><![CDATA[Install Make sure you install CoC, I have a video for that here After setting up CoC you can install with: Config You can create a config…]]></description><link>https://www.chrisatmachine.com/Neovim/17-snippets/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/17-snippets/</guid><pubDate>Fri, 22 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install&lt;/h2&gt;
 &lt;code-fence lang=&quot;null&quot; null&gt;
     &lt;textarea vue-slot=&quot;code&quot;&gt;
       Plug &apos;honza/vim-snippets&apos;
@@ -2095,7 +2095,72 @@ pacman -S nautilus
       reboot
     &lt;/textarea&gt;
     &lt;/code-fence&gt;
-  </content:encoded></item><item><title><![CDATA[Quickscope]]></title><description><![CDATA[Install Create config file Make sure to source this file in  Quickscope Form the github repo: "An always-on highlight for a unique character…]]></description><link>https://www.chrisatmachine.com/Neovim/14-quickscope/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/14-quickscope/</guid><pubDate>Sun, 03 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install&lt;/h2&gt;
+  </content:encoded></item><item><title><![CDATA[Sneak]]></title><description><![CDATA[Install Create config file Make sure to source this file in  Sneak Sneak is a motion plugin for vim that remaps the  and  keys The authors…]]></description><link>https://www.chrisatmachine.com/Neovim/13-sneak/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/13-sneak/</guid><pubDate>Sun, 03 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install&lt;/h2&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      Plug &apos;justinmk/vim-sneak&apos;
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;h2&gt;Create config file&lt;/h2&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      touch ~/.config/nvim/plug-config/sneak.vim
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;p&gt;Make sure to source this file in &lt;code class=&quot;language-text&quot;&gt;init.vim&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Sneak&lt;/h2&gt;
+&lt;p&gt;Sneak is a motion plugin for vim that remaps the &lt;code class=&quot;language-text&quot;&gt;s&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;S&lt;/code&gt; keys&lt;/p&gt;
+&lt;p&gt;The authors rationale for remapping these keys is this: cl is equivalent to s, and cc is equivalent to S.&lt;/p&gt;
+&lt;h3&gt;Configure Sneak&lt;/h3&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      let g:sneak#label = 1
+
+&quot; case insensitive sneak
+let g:sneak#use_ic_scs = 1
+
+&quot; immediately move to the next instance of search, if you move the cursor sneak is back to default behavior
+let g:sneak#s_next = 1
+
+&quot; remap so I can use , and ; with f and t
+map gS &lt;Plug&gt;Sneak_,
+map gs &lt;Plug&gt;Sneak_;
+
+&quot; Change the colors
+highlight Sneak guifg=black guibg=#00C7DF ctermfg=black ctermbg=cyan
+highlight SneakScope guifg=red guibg=yellow ctermfg=red ctermbg=yellow
+
+&quot; Cool prompts
+&quot; let g:sneak#prompt = &apos;🕵&apos;
+&quot; let g:sneak#prompt = &apos;🔎&apos;
+
+&quot; I like quickscope better for this since it keeps me in the scope of a single line
+&quot; map f &lt;Plug&gt;Sneak_f
+&quot; map F &lt;Plug&gt;Sneak_F
+&quot; map t &lt;Plug&gt;Sneak_t
+&quot; map T &lt;Plug&gt;Sneak_T
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;h3&gt;Sneak Commands&lt;/h3&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      s{char}{char}
+S{char}{char}
+
+f{char}
+F{char}
+
+
+t{char}
+T{char}
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;h2&gt;Link to Sneak repo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/justinmk/vim-sneak&quot;&gt;Sneak&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Quickscope]]></title><description><![CDATA[Install Create config file Make sure to source this file in  Quickscope Form the github repo: "An always-on highlight for a unique character…]]></description><link>https://www.chrisatmachine.com/Neovim/14-quickscope/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/14-quickscope/</guid><pubDate>Sun, 03 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install&lt;/h2&gt;
 &lt;code-fence lang=&quot;null&quot; null&gt;
     &lt;textarea vue-slot=&quot;code&quot;&gt;
       Plug &apos;unblevable/quick-scope&apos;
@@ -2250,72 +2315,7 @@ call which_key#register(&apos;&lt;Space&gt;&apos;, &quot;g:which_key_map&quot;)
     &lt;/code-fence&gt;
   
 &lt;h2&gt;Link to WhichKey repo&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/liuchengxu/vim-which-key&quot;&gt;WhichKey&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sneak]]></title><description><![CDATA[Install Create config file Make sure to source this file in  Sneak Sneak is a motion plugin for vim that remaps the  and  keys The authors…]]></description><link>https://www.chrisatmachine.com/Neovim/13-sneak/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/13-sneak/</guid><pubDate>Sun, 03 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install&lt;/h2&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      Plug &apos;justinmk/vim-sneak&apos;
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;h2&gt;Create config file&lt;/h2&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      touch ~/.config/nvim/plug-config/sneak.vim
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;p&gt;Make sure to source this file in &lt;code class=&quot;language-text&quot;&gt;init.vim&lt;/code&gt;&lt;/p&gt;
-&lt;h2&gt;Sneak&lt;/h2&gt;
-&lt;p&gt;Sneak is a motion plugin for vim that remaps the &lt;code class=&quot;language-text&quot;&gt;s&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;S&lt;/code&gt; keys&lt;/p&gt;
-&lt;p&gt;The authors rationale for remapping these keys is this: cl is equivalent to s, and cc is equivalent to S.&lt;/p&gt;
-&lt;h3&gt;Configure Sneak&lt;/h3&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      let g:sneak#label = 1
-
-&quot; case insensitive sneak
-let g:sneak#use_ic_scs = 1
-
-&quot; immediately move to the next instance of search, if you move the cursor sneak is back to default behavior
-let g:sneak#s_next = 1
-
-&quot; remap so I can use , and ; with f and t
-map gS &lt;Plug&gt;Sneak_,
-map gs &lt;Plug&gt;Sneak_;
-
-&quot; Change the colors
-highlight Sneak guifg=black guibg=#00C7DF ctermfg=black ctermbg=cyan
-highlight SneakScope guifg=red guibg=yellow ctermfg=red ctermbg=yellow
-
-&quot; Cool prompts
-&quot; let g:sneak#prompt = &apos;🕵&apos;
-&quot; let g:sneak#prompt = &apos;🔎&apos;
-
-&quot; I like quickscope better for this since it keeps me in the scope of a single line
-&quot; map f &lt;Plug&gt;Sneak_f
-&quot; map F &lt;Plug&gt;Sneak_F
-&quot; map t &lt;Plug&gt;Sneak_t
-&quot; map T &lt;Plug&gt;Sneak_T
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;h3&gt;Sneak Commands&lt;/h3&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      s{char}{char}
-S{char}{char}
-
-f{char}
-F{char}
-
-
-t{char}
-T{char}
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;h2&gt;Link to Sneak repo&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/justinmk/vim-sneak&quot;&gt;Sneak&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git integration]]></title><description><![CDATA[Plugins We're going to be looking at 4 plugins that bring a good integrate git experience to Neovim Create config files Make sure to source…]]></description><link>https://www.chrisatmachine.com/Neovim/12-git-integration/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/12-git-integration/</guid><pubDate>Sat, 02 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/liuchengxu/vim-which-key&quot;&gt;WhichKey&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Git integration]]></title><description><![CDATA[Plugins We're going to be looking at 4 plugins that bring a good integrate git experience to Neovim Create config files Make sure to source…]]></description><link>https://www.chrisatmachine.com/Neovim/12-git-integration/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/12-git-integration/</guid><pubDate>Sat, 02 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Plugins&lt;/h2&gt;
 &lt;p&gt;We&apos;re going to be looking at 4 plugins that bring a good integrate git experience to Neovim&lt;/p&gt;
 &lt;code-fence lang=&quot;null&quot; null&gt;
     &lt;textarea vue-slot=&quot;code&quot;&gt;
@@ -2754,26 +2754,7 @@ pacman -Slq | fzf -m --preview &apos;cat &lt;(pacman -Si {1}) &lt;(pacman -Fl {1
 yay -Slq | fzf -m --preview &apos;cat &lt;(yay -Si {1}) &lt;(yay -Fl {1} | awk &quot;{print \$2}&quot;)&apos; | xargs -ro  yay -S
     &lt;/textarea&gt;
     &lt;/code-fence&gt;
-  </content:encoded></item><item><title><![CDATA[Vim-commentary]]></title><description><![CDATA[Install commentary Configuration This is my preferred way to use this tool Just press / and it will comment out the line In visual mode…]]></description><link>https://www.chrisatmachine.com/Neovim/09-vim-commentary/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/09-vim-commentary/</guid><pubDate>Thu, 30 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install commentary&lt;/h2&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      Plug &apos;tpope/vim-commentary&apos;
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;h2&gt;Configuration&lt;/h2&gt;
-&lt;p&gt;This is my preferred way to use this tool&lt;/p&gt;
-&lt;code-fence lang=&quot;null&quot; null&gt;
-    &lt;textarea vue-slot=&quot;code&quot;&gt;
-      nnoremap &lt;space&gt;/ :Commentary&lt;CR&gt;
-vnoremap &lt;space&gt;/ :Commentary&lt;CR&gt;
-    &lt;/textarea&gt;
-    &lt;/code-fence&gt;
-  
-&lt;p&gt;Just press &lt;space&gt;/ and it will comment out the line&lt;/p&gt;
-&lt;p&gt;In visual mode select the text you want to comment out and press &lt;space&gt;/&lt;/p&gt;
-&lt;h2&gt;Link to repo&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/tpope/vim-commentary&quot;&gt;commentary&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Adding color with colorizer & rainbow]]></title><description><![CDATA[Install colorizer Configuration Create a place for lua plugins Add the following: Remember to source in , but a little differently this time…]]></description><link>https://www.chrisatmachine.com/Neovim/10-adding-color/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/10-adding-color/</guid><pubDate>Thu, 30 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install colorizer&lt;/h2&gt;
+  </content:encoded></item><item><title><![CDATA[Adding color with colorizer & rainbow]]></title><description><![CDATA[Install colorizer Configuration Create a place for lua plugins Add the following: Remember to source in , but a little differently this time…]]></description><link>https://www.chrisatmachine.com/Neovim/10-adding-color/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/10-adding-color/</guid><pubDate>Thu, 30 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install colorizer&lt;/h2&gt;
 &lt;code-fence lang=&quot;null&quot; null&gt;
     &lt;textarea vue-slot=&quot;code&quot;&gt;
       Plug &apos;norcalli/nvim-colorizer.lua&apos;
@@ -2858,7 +2839,26 @@ let g:rainbow#pairs = [[&apos;(&apos;, &apos;)&apos;], [&apos;[&apos;, &apos;]&a
 autocmd FileType * RainbowParentheses
     &lt;/textarea&gt;
     &lt;/code-fence&gt;
-  </content:encoded></item><item><title><![CDATA[Integrate Neovim with Ranger]]></title><description><![CDATA[Install Ranger Mac Ubuntu Arch Install Ranger devicons You can now add  to your  Install Ueberzug (Linux only) Unfortunately Ueberzug only…]]></description><link>https://www.chrisatmachine.com/Neovim/07-ranger/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/07-ranger/</guid><pubDate>Wed, 29 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install Ranger&lt;/h2&gt;
+  </content:encoded></item><item><title><![CDATA[Vim-commentary]]></title><description><![CDATA[Install commentary Configuration This is my preferred way to use this tool Just press / and it will comment out the line In visual mode…]]></description><link>https://www.chrisatmachine.com/Neovim/09-vim-commentary/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/09-vim-commentary/</guid><pubDate>Thu, 30 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install commentary&lt;/h2&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      Plug &apos;tpope/vim-commentary&apos;
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;h2&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;This is my preferred way to use this tool&lt;/p&gt;
+&lt;code-fence lang=&quot;null&quot; null&gt;
+    &lt;textarea vue-slot=&quot;code&quot;&gt;
+      nnoremap &lt;space&gt;/ :Commentary&lt;CR&gt;
+vnoremap &lt;space&gt;/ :Commentary&lt;CR&gt;
+    &lt;/textarea&gt;
+    &lt;/code-fence&gt;
+  
+&lt;p&gt;Just press &lt;space&gt;/ and it will comment out the line&lt;/p&gt;
+&lt;p&gt;In visual mode select the text you want to comment out and press &lt;space&gt;/&lt;/p&gt;
+&lt;h2&gt;Link to repo&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/tpope/vim-commentary&quot;&gt;commentary&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Integrate Neovim with Ranger]]></title><description><![CDATA[Install Ranger Mac Ubuntu Arch Install Ranger devicons You can now add  to your  Install Ueberzug (Linux only) Unfortunately Ueberzug only…]]></description><link>https://www.chrisatmachine.com/Neovim/07-ranger/</link><guid isPermaLink="false">https://www.chrisatmachine.com/Neovim/07-ranger/</guid><pubDate>Wed, 29 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Install Ranger&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Mac&lt;/p&gt;
