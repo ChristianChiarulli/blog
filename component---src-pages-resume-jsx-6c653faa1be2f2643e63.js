@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{dAIu:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a),r=t("L12J"),i=t("dmsj"),o=t("kNGQ"),s=t.n(o);n.default=function(){return c.a.createElement(r.a,null,c.a.createElement(i.a,{title:"Resume",keywords:["chris@machine"]}),c.a.createElement("h1",{style:{textAlign:"center"}},"Resume"),c.a.createElement("div",{className:s.a.container}))}},kNGQ:function(e,n,t){e.exports={container:"contact-module--container--1_MGY"}}}]);
+//# sourceMappingURL=component---src-pages-resume-jsx-6c653faa1be2f2643e63.js.map
