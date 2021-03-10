@@ -7,14 +7,6 @@ import Nvim from "../images/nvim.png"
 import ThisBlog from "../images/this-blog.png"
 import Gatr from "../images/gatr.png"
 import style from "./index.module.less"
-import {
-  FaGithub,
-  FaLinkedin,
-  FaYoutube,
-  FaDiscord,
-  FaPatreon,
-  FaRss,
-} from "react-icons/fa"
 
 const IndexPage = () => {
   return (
@@ -45,66 +37,6 @@ const IndexPage = () => {
               Neovim and Machine Learning. You can find me on the following
               social media sites.
             </span>
-            <div className={style.list}>
-              <ul>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    href={"https://github.com/ChristianChiarulli"}
-                  >
-                    <FaGithub color="#FFFFFF" size="30" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    href={
-                      "https://www.youtube.com/channel/UCS97tchJDq17Qms3cux8wcA"
-                    }
-                  >
-                    <FaYoutube color="#EB3323" size="30" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    href={"https://discord.gg/Xb9B4Ny"}
-                  >
-                    <FaDiscord color="#768AD4" size="30" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    href={"https://www.linkedin.com/in/christianchiarulli/"}
-                  >
-                    <FaLinkedin color="#3077B0" size="30" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    href={"https://www.patreon.com/chrisatmachine"}
-                  >
-                    <FaPatreon color="#E8715C" size="30" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    href={"https://www.chrisatmachine.com/rss.xml"}
-                  >
-                    <FaRss color="#E89D4B" size="30" />
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
