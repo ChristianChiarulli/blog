@@ -36,8 +36,8 @@ const Header = () => {
           {isMenuCollapsed ? (
             <FaBars size="30" onClick={toggleMenu} />
           ) : (
-            <FaTimes size="30" onClick={toggleMenu} />
-          )}
+              <FaTimes size="30" onClick={toggleMenu} />
+            )}
         </div>
       </div>
       <div
@@ -115,14 +115,14 @@ const Header = () => {
   )
 }
 
-          // <li>
-          //   <a
-          //     target="_blank"
-          //     rel="nofollow noopener noreferrer"
-          //     href={"https://www.chrisatmachine.com/rss.xml"}
-          //   >
-          //     <FaRss color="#E89D4B" size="30" />
-          //   </a>
-          // </li>
+// <li>
+//   <a
+//     target="_blank"
+//     rel="nofollow noopener noreferrer"
+//     href={"https://www.chrisatmachine.com/rss.xml"}
+//   >
+//     <FaRss color="#E89D4B" size="30" />
+//   </a>
+// </li>
 
 export default Header
