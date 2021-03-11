@@ -18,9 +18,11 @@ This article will show you how to turn Neovim into a lua IDE.
 
 1. Install `ninja`
 
-    Arch: `sudo pacman -S ninja`
-    Ubuntu: `sudo apt install ninja-build`
-    Mac: `brew instal ninja`
+    - Arch: `sudo pacman -S ninja`
+
+    - Ubuntu: `sudo apt install ninja-build`
+
+    - Mac: `brew install ninja`
 
 2. Clone Lua Language Server Repo
 
@@ -138,10 +140,14 @@ require"lspconfig".efm.setup {
 }
 ```
 
-Now you can call: ` lua vim.lsp.buf.formatting()'
+Now you can call: ` lua vim.lsp.buf.formatting()`
 
-And for autoformat add this to a .vim file and source it:
+And for auto-format add this to a .vim file and source it:
 
 ```
 autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100)
 ```
+
+## Links and references
+
+[Install language server](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone))
