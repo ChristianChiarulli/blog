@@ -12,7 +12,7 @@ If you are familiar with VS Code then you have probably noticed all of the symbo
 
 ## Adding to CoC
 
-To add them to the CoC compeletion menu add the following to your `coc-settings.json`:
+To add them to the CoC completion menu add the following to your `coc-settings.json`:
 
 ```
   "suggest.completionItemKindLabels": {

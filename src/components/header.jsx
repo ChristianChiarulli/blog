@@ -9,6 +9,7 @@ import {
   FaDiscord,
   FaPatreon,
   FaRss,
+  FaTwitter,
 } from "react-icons/fa"
 import style from "./header.module.less"
 
@@ -35,8 +36,8 @@ const Header = () => {
           {isMenuCollapsed ? (
             <FaBars size="30" onClick={toggleMenu} />
           ) : (
-            <FaTimes size="30" onClick={toggleMenu} />
-          )}
+              <FaTimes size="30" onClick={toggleMenu} />
+            )}
         </div>
       </div>
       <div
@@ -52,14 +53,17 @@ const Header = () => {
           <li>
             <Link to={"/tags"}>Topics</Link>
           </li>
-          <li>
-            <Link to={"/contact"}>Contact</Link>
-          </li>
-          <li>
-            <Link to={"/donate"}>Donate</Link>
-          </li>
         </ul>
         <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={"https://twitter.com/chrisatmachine"}
+            >
+              <FaTwitter color="#1DA1F2" size="30" />
+            </a>
+          </li>
           <li>
             <a
               target="_blank"
@@ -105,19 +109,20 @@ const Header = () => {
               <FaPatreon color="#E8715C" size="30" />
             </a>
           </li>
-          <li>
-            <a
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              href={"https://www.chrisatmachine.com/rss.xml"}
-            >
-              <FaRss color="#E89D4B" size="30" />
-            </a>
-          </li>
         </ul>
       </div>
     </div>
   )
 }
+
+// <li>
+//   <a
+//     target="_blank"
+//     rel="nofollow noopener noreferrer"
+//     href={"https://www.chrisatmachine.com/rss.xml"}
+//   >
+//     <FaRss color="#E89D4B" size="30" />
+//   </a>
+// </li>
 
 export default Header
