@@ -23,7 +23,7 @@ gpg: keyserver receive failed: General error
 ==> Error: Problem importing keys
 ```
 
-Just recieve the key using:
+Just receive the key using:
 
 ```
 gpg --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 --recv 27EDEAF22F3ABCEB50DB9A125CC908FDB71E12C2
