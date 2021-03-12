@@ -106,6 +106,16 @@ We can install a formatter and use the `efm-language-server` server to support i
 
 The `efm-language-server` is a general purpose language-server
 
+**Install Lua Formatter**
+
+First install [LuaRocks](https://github.com/luarocks/luarocks)
+
+Then run:
+
+```
+luarocks install --server=https://luarocks.org/dev luaformatter
+```
+
 **Install efm-language-server**
 
 - Linux (you will need to have go installed, also you will need to put the go/bin dir in your PATH)
@@ -151,3 +161,7 @@ autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100)
 ## Links and references
 
 [Install language server](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone))
+
+[LuaRocks](https://github.com/luarocks/luarocks)
+
+[LuaFormatter](https://github.com/Koihik/LuaFormatter)
