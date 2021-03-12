@@ -4,7 +4,7 @@ description: description
 date: "2021-03-12"
 image: "sdkman.png"
 author: "Chris"
-tags: ["spring"]
+tags: ["java"]
 ---
 
 ## What is SDKMAN?
@@ -145,3 +145,7 @@ sdkman_colour_enable=true|false
 # enable automatic env
 sdkman_auto_env=true|false
 ```
+
+## References
+
+[SDKMAN!](https://sdkman.io/)
