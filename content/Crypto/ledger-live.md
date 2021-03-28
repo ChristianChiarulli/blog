@@ -29,19 +29,13 @@ wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_ud
 mv ledger-live-*.AppImage ledger-live.AppImage
 ```
 
-6. Add udev rules to allow USB access
-
-```
-wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
-```
-
-7. Get the Icon 
+6. Get the Icon 
 
 ```
 wget -P ~/.local/share/icons/ https://coinzodiac.com/wp-content/uploads/2018/10/ledger-live-icon.png
 ```
 
-8. Add entry to desktop
+7. Add entry to desktop
 
 Create the following `ledger-live.desktop`:
 
@@ -66,7 +60,7 @@ Move the application to your applications folder:
 mv ledger-live.desktop ~/.local/share/applications
 ```
 
-9. Enjoy your ledger-live desktop app
+8. Enjoy your ledger-live desktop app
 
 ## References
 
