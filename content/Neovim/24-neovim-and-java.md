@@ -110,8 +110,8 @@ Here are a bunch of commands to get the behavior of this video:
 // codelens
 "codeLens.enable": true,
 "java.referencesCodeLens.enabled": true,
-"java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok.jar",
-// "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok.jar", // for older versions of Java
+"java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
+// "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar", // for older versions of Java
 ```
 
 ## Repo Links
