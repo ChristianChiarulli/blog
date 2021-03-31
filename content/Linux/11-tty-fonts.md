@@ -45,3 +45,9 @@ If you don't already have a `~/.profile` then:
 ```
 touch ~/.profile
 ```
+
+then add `setfont ter-p32b`
+
+```
+echo 'setfont ter-p32b' >> ~/.profile 
+```
