@@ -14,19 +14,19 @@ If you ever need a better or bigger font in your TTY, for instance during a Arch
 
 - [kbd](https://kbd-project.org/)
 
-    ```bash
+    ```
     pacman -S kbd
     ```
 
 - [terminus fonts](https://github.com/powerline/fonts/tree/master/Terminus)
 
-    ```bash
+    ```
     pacman -S terminus-font
     ```
 
 ## Set your font
 
-```bash
+```
 cd /usr/share/kbd/consolefonts
 ```
 
@@ -36,4 +36,12 @@ So in this case:
 
 ```
 setfont ter-p32b
+```
+
+## Persist your change
+
+If you don't already have a `~/.profile` then:
+
+```
+touch ~/.profile
 ```
