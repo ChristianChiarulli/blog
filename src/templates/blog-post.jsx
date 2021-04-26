@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import PostPager from "../components/post-pager"
@@ -43,6 +44,7 @@ function BlogPost(props) {
 
   return (
     <Layout>
+      <SEO title={title} keywords={tags} />
       <div>
         {image && (
           <Img
