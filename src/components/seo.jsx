@@ -70,12 +70,16 @@ function SEO({ description, lang, meta, title, keywords }) {
         content="8XINwkJ1ddUZTNLbqRwI0wqBIg6cwpTklXzLjQ6H4Bk"
       />
 
-      {title && <meta property="og:title" content={title} />}
+      {title && <meta name="title" property="og:title" content={title} />}
       {metaDescription && (
-          <meta property="og:description" content={metaDescription} />
-        ) && <meta name="description" content={metaDescription} />}
-      {keywords && <meta property="keywords" content={keywords} />}
-      {author && <meta property="author" content={author} />}
+        <meta
+          name="description"
+          property="og:description"
+          content={metaDescription}
+        />
+      )}
+      {keywords && <meta name="keywords" content={keywords} />}
+      {author && <meta name="author" content={author} />}
 
     </Helmet>
   )

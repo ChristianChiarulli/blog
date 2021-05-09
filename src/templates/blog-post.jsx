@@ -11,7 +11,7 @@ import loadable from "@loadable/component"
 import "@suziwen/gitalk/dist/gitalk.css"
 
 function BlogPost(props) {
-  const { title, image, tags } = props.data.markdownRemark.frontmatter
+  const {title, image, tags, description} = props.data.markdownRemark.frontmatter
   const { prev, next } = props.pageContext
   const { id } = props.data.markdownRemark
 
@@ -44,7 +44,7 @@ function BlogPost(props) {
 
   return (
     <Layout>
-      <SEO title={title} keywords={tags} />
+      <SEO title={title} keywords={tags} description={description} />
       <div>
         {image && (
           <Img
@@ -87,6 +87,7 @@ export const query = graphql`
       frontmatter {
         title
         tags
+        description
         image {
           childImageSharp {
             resize(width: 1000, height: 420) {
