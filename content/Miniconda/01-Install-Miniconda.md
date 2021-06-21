@@ -44,7 +44,16 @@ The first time you run it, it'll create a ./condarc in your home directory with 
 Now you can initialize your shell with the following command:
 
 ```
-conda init $SHELL
+conda init <shell>
 ```
+
+Currently available shells are:
+  - bash
+  - fish
+  - powershell
+  - tcsh
+  - xonsh
+  - zsh
+
 
 Now close your terminal and open a new one and your conda environment should be fully configured.
