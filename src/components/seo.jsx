@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, keywords }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const author = site.siteMetadata.author || "Chris"
 
   return (
     <Helmet
@@ -63,11 +64,23 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     >
       <html lang="en" />
-      <title>{site.siteMetadata.title}</title>
+      <title>{title}</title>
       <meta
         name="google-site-verification"
         content="8XINwkJ1ddUZTNLbqRwI0wqBIg6cwpTklXzLjQ6H4Bk"
       />
+
+      {title && <meta name="title" property="og:title" content={title} />}
+      {metaDescription && (
+        <meta
+          name="description"
+          property="og:description"
+          content={metaDescription}
+        />
+      )}
+      {keywords && <meta name="keywords" content={keywords} />}
+      {author && <meta name="author" content={author} />}
+
     </Helmet>
   )
 }
