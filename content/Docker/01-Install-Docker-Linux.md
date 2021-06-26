@@ -10,15 +10,18 @@ tags: ["archlinux", "docker"]
 
 Here are some popular examples.
 
-- Ubuntu:
-  ```
-  sudo apt install docker
-  ```
+- Ubuntu, Debian, CentOS, Fedora:
+
+[install link](https://docs.docker.com/engine/install/)
 
 - Arch:
   ```
   sudo pacman -S docker
   ```
+
+- Gentoo:
+
+[install link](https://wiki.gentoo.org/wiki/Docker)
 
 ## Add user to docker group
 
@@ -40,10 +43,18 @@ starting the service will activate it for your current session
 
 enabling the service will activate for all future sessions
 
-```
-sudo systemctl start docker
+**NOTE** These services will be automatically enabled for Ubuntu and Debian
 
-sudo systemctl enable docker
+```
+sudo systemctl enable docker.service
+
+sudo systemctl enable containerd.service
+```
+
+You can use the following to check that the services are enabled:
+
+```
+systemctl list-unit-files --state=enabled
 ```
 
 ## Testing your installation
