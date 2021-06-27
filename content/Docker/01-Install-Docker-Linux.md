@@ -60,3 +60,15 @@ systemctl list-unit-files --state=enabled
 ## Testing your installation
 
 Run `docker info` to confirm the docker service is running
+
+## Images to get you started
+
+Here are some examples of what you can do with docker:
+
+```
+docker run -it python
+
+docker run -d -p 27017-27019:27017-27019 --name mongodb mongo
+
+docker run -it ubuntu # run cat /etc/os-release 
+```
