@@ -43,15 +43,13 @@ starting the service will activate it for your current session
 
 enabling the service will activate for all future sessions
 
-**NOTE** These services will be automatically enabled for Ubuntu and Debian
+**NOTE** The service will be automatically enabled for Ubuntu and Debian
 
 ```
 sudo systemctl enable docker.service
-
-sudo systemctl enable containerd.service
 ```
 
-You can use the following to check that the services are enabled:
+You can use the following to check that the service is enabled:
 
 ```
 systemctl list-unit-files --state=enabled
