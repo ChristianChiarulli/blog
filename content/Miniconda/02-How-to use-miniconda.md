@@ -12,12 +12,12 @@ The previous article explains how to properly install and configure Miniconda. T
 ## Creating a Virtual Environment
 
 ```
-conda create --name <myenv> python=<3.7> pip -y
+conda create -n <myenv> python=<3.7> pip -y
 ```
 
 This command will create a virtual environment with the following properties:
 
-- -name myenv You can choose any name you want here
+- -n myenv You can choose any name you want here
 - python=3.7 you can set the version to be whatever you want such as 2.7 (if you don't specify a version it will choose the latest)
 - -y this just preemptively answers yes to creating the environment
 
