@@ -1,5 +1,5 @@
 ---
-title: SSH into Remarkable Tablet
+title: Stream Remarkable Tablet on Linux
 description: description
 date: "2021-08-12"
 image: "remarkable.png"
@@ -37,7 +37,7 @@ scp ~/.ssh/id_rsa.pub root@10.11.99.1:/home/root
 
 Login to the remarkable:
 
-```sh
+```
 ssh root@10.11.99.1
 # Enter password
 
@@ -50,7 +50,7 @@ chmod -R og-rwx /home/root/.ssh
 
 Now you can login without a password:
 
-```sh
+```
 ssh root@10.11.99.1
 ```
 
@@ -58,7 +58,7 @@ Useful alias:
 
 Add this to your `.bashrc` or `.zshrc`
 
-```sh
+```
 alias remarkable_ssh='root@10.11.99.1'
 ```
 
@@ -72,13 +72,13 @@ PubkeyAcceptedKeyTypes +ssh-rsa
 
 Login to your remarkable:
 
-```sh
+```
 ssh root@10.11.99.1
 ```
 
 Run the following to install reStream on remarkable:
 
-```sh
+```
 wget https://github.com/rien/reStream/releases/latest/download/restream.arm.static -O /home/root/restream && chmod +x /home/root/restream
 ```
 
@@ -86,7 +86,7 @@ wget https://github.com/rien/reStream/releases/latest/download/restream.arm.stat
 
 Arch Linux:
 
-```sh
+```
 yay -S restream-git
 ```
 
