@@ -11,6 +11,8 @@ tags: ["archlinux", "remarkable"]
 
 On the remarkable: Settings -> Storage -> USB web interface: On
 
+Plug your remarkable into your PC
+
 ## Find IP address and password
 
 On the remarkable: Settings -> Help -> Copyrights and licenses
