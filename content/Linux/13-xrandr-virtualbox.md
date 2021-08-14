@@ -39,6 +39,8 @@ You may notice popular options like 1920x1080 and 2560x1440 are not available. T
 
 Example for 1920x1080
 
+**NOTE** Fix blank screen for 2560x1440, make sure you give the max amount of video memory available under: Settings -> Display -> Video Memory
+
 I'm going to be copy pasting something here because I can't be bothered to rewrite this:
 
 First we need to get the modeline string for xrandr
