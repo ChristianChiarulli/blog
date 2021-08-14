@@ -94,9 +94,25 @@ xrandr --output Virtual1 --mode "1920x1080_60.00"
 
 The option should also now be available in your display settings on gnome for instance.
 
+## Persisting the resolution
+
+This resolution will not be available to you after reboot
+
+To make it available add the following to `/etc/X11/xorg.conf.d/10-monitor.conf`
+
+```
+Section "Monitor"
+    Identifier "Virtual"
+    Modeline "1920x1080_60.00"  172.80  1920 2040 2248 2576  1080 1081 1084 1118  -HSync +Vsync 
+    Option "PreferredMode" "1920x1080_60.00" 
+EndSection
+```
+
 ## Resources
 
 [Xrandr Answer on Stack Exchange](https://unix.stackexchange.com/questions/227876/how-to-set-custom-resolution-using-xrandr-when-the-resolution-is-not-available-i)
+
+[archwiki xrandr](https://wiki.archlinux.org/title/Xrandr)
 
 [Useful script](https://gist.github.com/chirag64/7853413)
 
