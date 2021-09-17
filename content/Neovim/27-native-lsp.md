@@ -148,10 +148,10 @@ Here are some examples:
 
 **Python:**
 
-- Install language server: `npm i -g pyright`
+- Install language server: `pip install python-lsp-server`
 - Configure language server:
     ```lua heading="python-lsp.lua" 
-    require'lspconfig'.pyright.setup{}
+    require'lspconfig'.pylsp.setup{}
     ```
 
 **Bash:**
