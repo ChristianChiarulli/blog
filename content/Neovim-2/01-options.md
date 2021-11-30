@@ -1,13 +1,13 @@
 ---
 title: Neovim Setting basic options
 description:
-date: "2020-04-24"
+date: "2021-11-29"
 image: "neovim.png"
 author: "Chris"
 tags: ["neovim-s-2"]
 ---
 
-## General Setings
+## General Options
 
 To include some basics in your config first create a directory called `user` and a file called `options.lua`
 
