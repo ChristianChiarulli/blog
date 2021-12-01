@@ -1,5 +1,5 @@
 ---
-title: Neovim Setting basic options
+title: Neovim Setting keymaps
 description:
 date: "2021-11-28"
 image: "neovim.png"
@@ -8,6 +8,12 @@ tags: ["neovim-s-2"]
 ---
 
 ## Useful Keymaps
+
+Create the keymaps file:
+
+```
+touch ~/.config/nvim/lua/user/keymaps.lua
+```
 
 Here are some useful keymappings I use:
 
